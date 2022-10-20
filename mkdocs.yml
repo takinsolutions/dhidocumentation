@@ -1,0 +1,22 @@
+site_name: DHI Data Model
+site_url: https://dhidocumentation.github.io/
+nav:
+    - Data Model: index.md
+    - Person: person.md
+    - Group: group.md
+    - Place: place.md
+    - Physical Object: object.md
+    - Legal Document: document.md
+    - Legal Act: act.md
+    - Property Right Status: rights.md
+    - Ownership Status: ownership.md
+    - Custodial Status: custodial.md
+    - Obligation Status: obligation.md
+    - Social Status: social.md
+    - Institutional Status: institutional.md
+theme: windmill
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - tables
+

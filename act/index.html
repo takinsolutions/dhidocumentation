@@ -1,0 +1,1496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <link rel="canonical" href="https://dhidocumentation.github.io/act/">
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Legal Act - DHI Data Model</title>
+    <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Legal Act", url: "#_top", children: [
+              {title: "- Legal Act Ontology Graph", url: "#-legal-act-ontology-graph" },
+              {title: "- Legal Act RDF", url: "#-legal-act-rdf" },
+              {title: "- Legal Act JSON-LD", url: "#-legal-act-json-ld" },
+          ]},
+        ];
+
+    </script>
+    <script src="../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../rights/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../rights/" class="btn btn-xs btn-link">
+        Property Right Status
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../document/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../document/" class="btn btn-xs btn-link">
+        Legal Document
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <p><strong>Legal Act</strong></p>
+<p><strong>Author:</strong> Takin.solutions Ltd.</p>
+<p><strong>Version:</strong> 1.0</p>
+<h2 id="legal-act"><strong>Legal Act</strong></h2>
+<p>A notarial activity such as a transfer of right, a transfer custody over an object, etc., or the legally binding establishment/annulment of a social role, such as procuration. </p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Name</th>
+<th>URI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Root Ontology Node</td>
+<td>E7 Activity</td>
+<td>https://cidoc-crm.org/Entity/E7-Activity/version-7.1.1</td>
+</tr>
+<tr>
+<td>Type Differentiator</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Filed ID</th>
+<th>Name</th>
+<th>Description</th>
+<th>Data Type</th>
+<th>CRM Path</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LAF.6</td>
+<td>Name</td>
+<td>This field is used to record the string value of the name attributed to the documented legal act.</td>
+<td>String</td>
+<td>-&gt;p1-&gt;E33_E41[4_1]-&gt;p190-&gt;rdf:literal</td>
+</tr>
+<tr>
+<td>LAF.5</td>
+<td>Name Type</td>
+<td>This field is used to record the type of the name attributed to the documented legal act.</td>
+<td>Concept</td>
+<td>-&gt;p1-&gt;E33_41[4_1]-&gt;p2-&gt;E55[5_1]</td>
+</tr>
+<tr>
+<td>LAF.7</td>
+<td>Name Language</td>
+<td>This field is used to record the language of the name attributed to the documented legal act.</td>
+<td>Concept</td>
+<td>-&gt;p1-&gt;E33_E41[4_1]-&gt;p72-&gt;E56[7_1]</td>
+</tr>
+<tr>
+<td>LAF.44</td>
+<td>Source Reference Work for Name</td>
+<td>This field is used to link to a source text in which the name denoting the documented legal act is used.</td>
+<td>Reference Model   [DHIM.5_Legal Document ]</td>
+<td>-&gt;p1-&gt;E33_E41[4_1]-&gt;p67i-&gt;E33[44_1]</td>
+</tr>
+<tr>
+<td>LAF.11</td>
+<td>Type</td>
+<td>This field is used to record the formal type of the documented legal act.</td>
+<td>Concept</td>
+<td>-&gt;p2-&gt;E55[11_1]</td>
+</tr>
+<tr>
+<td>LAF.12</td>
+<td>Meta-type</td>
+<td>This field is used to record the metatype attributed to a formal classification. The function of a metatype is to enable the programmatic distinction between different kinds of type applied to the same documented entity.</td>
+<td>Concept</td>
+<td>-&gt;p2-&gt;E55[11_1]-&gt;p2-&gt;E55 [12_1]</td>
+</tr>
+<tr>
+<td>LAF.15</td>
+<td>Statement</td>
+<td>This field is used to record the actual textual content of the statement describing the documented legal act.</td>
+<td>String</td>
+<td>-&gt;p67i-&gt;E33[13_1]-&gt;p190-&gt;rdf:literal</td>
+</tr>
+<tr>
+<td>LAF.14</td>
+<td>Statement Type</td>
+<td>This field is used to record the formal type of the statement made about the documented legal act.</td>
+<td>Concept</td>
+<td>-&gt;p67i-&gt;E33[13_1]-&gt;p2-&gt;E55[14_1]</td>
+</tr>
+<tr>
+<td>LAF.16</td>
+<td>Statement Language</td>
+<td>This field is used to record the language of the statement describing the documented legal act.</td>
+<td>Concept</td>
+<td>-&gt;p67i-&gt;E33[13_1]-&gt;p72-&gt;E56[16_1]</td>
+</tr>
+<tr>
+<td>LAF.55</td>
+<td>Source Reference Work for Statement</td>
+<td>This field is used to link to a source text from which the statement describing the documented legal act is derived.</td>
+<td>Reference Model  [DHIM.5_Legal Document ]</td>
+<td>-&gt;p67i-&gt;E33[13_1]-&gt;p67i-&gt;E33[55_1]</td>
+</tr>
+<tr>
+<td>LAF.25</td>
+<td>Begin of the Begin</td>
+<td>This field is used to record the earliest possible start date for the timespan of the documented legal act.</td>
+<td>Date</td>
+<td>-&gt;p4-&gt;E52[22_1]-&gt;p82a-&gt;xsl:date</td>
+</tr>
+<tr>
+<td>LAF.23</td>
+<td>End of the Begin</td>
+<td>This field is used to record the latest possible start date for the timespan of the documented legal act.</td>
+<td>Date</td>
+<td>-&gt;p4-&gt;E52[22_1]-&gt;p81a-&gt;xsl:date</td>
+</tr>
+<tr>
+<td>LAF.24</td>
+<td>Begin of the End</td>
+<td>This field is used to record the earliest possible end date for the timespan of the documented legal act.</td>
+<td>Date</td>
+<td>-&gt;p4-&gt;E52[22_1]-&gt;p81b-&gt;xsl:date</td>
+</tr>
+<tr>
+<td>LAF.26</td>
+<td>End of the End</td>
+<td>This field is used to record the latest possible end date for the timespan of the documented legal act.</td>
+<td>Date</td>
+<td>-&gt;p4-&gt;E52[22_1]-&gt;p82b-&gt;xsl:date</td>
+</tr>
+<tr>
+<td>LAF.19</td>
+<td>Location of Activity</td>
+<td>This field is used to link the documented legal act to an instance of place at which it occurred.</td>
+<td>Reference Model  [DHIM.3_Place]</td>
+<td>-&gt;p7-&gt;E53[19_1]</td>
+</tr>
+<tr>
+<td>DHIF.8</td>
+<td>actor with role in activity</td>
+<td>This field is used to link the documented legal act to an actor that plays a typified role in that activity.</td>
+<td>Reference Model  [DHIM.1_Person; DHIM.2_Group]</td>
+<td>-&gt;P01i-&gt;PC14[DHIF.8_1]-&gt;P02-&gt;E39_Actor[DHIF.8_2]</td>
+</tr>
+<tr>
+<td>DHIF.9</td>
+<td>role of actor in activity</td>
+<td>This field is used to record the role played by an actor in an activity with typified roles.</td>
+<td>Concept</td>
+<td>-&gt;P01i-&gt;PC14[DHIF.8_1]-&gt;P14.1-&gt;E55_Type[DHIF.9_1]</td>
+</tr>
+<tr>
+<td>LAF.21</td>
+<td>generic actor in activity</td>
+<td>This field is used to link the documented legal act to an instance of actor who was causally, but otherwise generically, involved in the execution of the activity.</td>
+<td>Reference Model [DHIM.1_Person; DHIM.2_Group]</td>
+<td>-&gt;p14-&gt;E39[21_1]</td>
+</tr>
+<tr>
+<td>DHIF.10</td>
+<td>property right transfer type</td>
+<td>This field is used to record the formal type of the documented property right transfer.</td>
+<td>Concept</td>
+<td>-&gt;P9-&gt;ZE29[DHIF.10_1]-&gt;P2-&gt;E55[DHIF.10_2]</td>
+</tr>
+<tr>
+<td>DHIF.11</td>
+<td>property right transfer generic actor receiving</td>
+<td>This field is used to link the documented property right transfer to the actor who received property right in the transfer.</td>
+<td>Reference Model  [DHIM.1_Person; DHIM.2_Group]</td>
+<td>-&gt;P9-&gt;ZE29[DHIF.10_1]-&gt;ZP61-&gt;E39[DHIF.11_1]</td>
+</tr>
+<tr>
+<td>DHIF.12</td>
+<td>property right transfer generic actor ceding</td>
+<td>This field is used to link the documented property right transfer to the actor who surrendered property right in the transfer.</td>
+<td>Reference Model [DHIM.1_Person; DHIM.2_Group]</td>
+<td>-&gt;P9-&gt;ZE29[DHIF.10_1]-&gt;ZP62-&gt;E39[DHIF.12_1]</td>
+</tr>
+<tr>
+<td>DHIF.13</td>
+<td>object of property right transfer</td>
+<td>This field is used to link the documented property right transfer to the object over which property right is transferred.</td>
+<td>Reference Model [DHIM.4_Physical Object]</td>
+<td>-&gt;P9-&gt;ZE29[DHIF.10_1]-&gt;ZP63-&gt;E72[DHIF.13_1]</td>
+</tr>
+<tr>
+<td>DHIF.14</td>
+<td>property right transfer actor with role receiving</td>
+<td>This field is used to link the documented transfer of property right to an actor that plays a typified role in the reception of right in the transfer.</td>
+<td>Reference Model  [DHIM.1_Person; DHIM.2_Group]</td>
+<td>-&gt;P9-&gt;ZE29[DHIF.10_1]-&gt;P01i-&gt;ZPC61[DHIF.14_1]-&gt;P02-&gt;E39_Actor[DHIF.14_2]</td>
+</tr>
+<tr>
+<td>DHIF.15</td>
+<td>property right transfer role of actor receiving</td>
+<td>This field is used to record the role played by an actor receiving right in a transfer of property rights with typified roles.</td>
+<td>Concept</td>
+<td>-&gt;P9-&gt;ZE29[DHIF.10_1]-&gt;P01i-&gt;ZPC61[DHIF.14_1]-&gt;ZP61.1-&gt;E55_Type[DHIF.15_1]</td>
+</tr>
+<tr>
+<td>DHIF.16</td>
+<td>property right transfer actor with role ceding</td>
+<td>This field is used to link the documented transfer of property right to an actor that plays a typified role in the cession of right in the transfer.</td>
+<td>Reference Model [DHIM.1_Person; DHIM.2_Group]</td>
+<td>-&gt;P9-&gt;ZE29[DHIF.10_1]-&gt;P01i-&gt;ZPC62[DHIF.16_1]-&gt;P02-&gt;E39_Actor[DHIF.16_2]</td>
+</tr>
+<tr>
+<td>DHIF.17</td>
+<td>property right transfer role of actor ceding</td>
+<td>This field is used to record the role played by an actor ceding rights in a transfer of property rights with typified roles.</td>
+<td>Concept</td>
+<td>-&gt;P9-&gt;ZE29[DHIF.10_1]-&gt;P01i-&gt;ZPC62[DHIF.16_1]-&gt;ZP62.1-&gt;E55_Type[DHIF.17_1]</td>
+</tr>
+<tr>
+<td>DHIF.18</td>
+<td>initiated property right status</td>
+<td>This field is used to link the documented property right transfer to the property right status which the transfer initiates.</td>
+<td>Reference Model [DHIM.7_Property Right Status]</td>
+<td>-&gt;P9-&gt;ZE29[DHIF.10_1]-&gt;ZP42-&gt;ZE30[DHIF.18_1]</td>
+</tr>
+<tr>
+<td>DHIF.19</td>
+<td>annulled property right status</td>
+<td>This field is used to link the documented property right transfer to the property right status which the transfer annuls.</td>
+<td>Reference Model [DHIM.7_Property Right Status]</td>
+<td>-&gt;P9-&gt;ZE29[DHIF.10_1]-&gt;ZP52-&gt;ZE30[DHIF.19_1]</td>
+</tr>
+<tr>
+<td>DHIF.20</td>
+<td>obligation type</td>
+<td>This field is used to record the formal type of the documented declaration of obligation.</td>
+<td>Concept</td>
+<td>-&gt;P9-&gt;ZE27[DHIF.20_1]-&gt;P2-&gt;E55[DHIF.20_2]</td>
+</tr>
+<tr>
+<td>DHIF.21</td>
+<td>obligation generic actor owing</td>
+<td>This field is used to link the documented declaration of obligation to an actor who owes in the obligation.</td>
+<td>Reference Model [DHIM.1_Person; DHIM.2_Group]</td>
+<td>-&gt;P9-&gt;ZE27[DHIF.20_1]-&gt;ZP67-&gt;E39[DHIF.21_1]</td>
+</tr>
+<tr>
+<td>DHIF.22</td>
+<td>obligation generic actor owed</td>
+<td>This field is used to link the documented declaration of obligation to an actor who is owed in the obligation.</td>
+<td>Reference Model  [DHIM.1_Person; DHIM.2_Group]</td>
+<td>-&gt;P9-&gt;ZE27[DHIF.20_1]-&gt;ZP68-&gt;E39[DHIF.22_1]</td>
+</tr>
+<tr>
+<td>DHIF.23</td>
+<td>amount owed in obligation</td>
+<td>This field is used to record the extent of obligation in the documented declaration of obligation, wherein one actor owes another.</td>
+<td>Collection [LAP.8_Dimension]</td>
+<td>-&gt;P9-&gt;ZE27[DHIF.20_1]-&gt;ZP69-&gt;E54[DHIF.23_1]</td>
+</tr>
+<tr>
+<td>DHIF.24</td>
+<td>obligation actor with role owing</td>
+<td>This field is used to link the documented declaration of obligation to an actor that plays a typified role in owing via the declaration.</td>
+<td>Reference Model [DHIM.1_Person; DHIM.2_Group]</td>
+<td>-&gt;P9-&gt;ZE27[DHIF.20_1]-&gt;P01i-&gt;ZPC67[DHIF.24_1]-&gt;P02-&gt;E39_Actor[DHIF.24_2]</td>
+</tr>
+<tr>
+<td>DHIF.25</td>
+<td>obligation role of actor owing</td>
+<td>This field is used to record the role played by an actor who owes in a declaration of obligation with typified roles.</td>
+<td>Concept</td>
+<td>-&gt;P9-&gt;ZE27[DHIF.20_1]-&gt;P01i-&gt;ZPC67[DHIF.24_1]-&gt;ZP67.1-&gt;E55_Type[DHIF.25_1]</td>
+</tr>
+<tr>
+<td>DHIF.26</td>
+<td>obligation actor with role owed</td>
+<td>This field is used to link the documented declaration of obligation to an actor that plays a typified role in being owed via the declaration.</td>
+<td>Reference Model   [DHIM.1_Person; DHIM.2_Group]</td>
+<td>-&gt;P9-&gt;ZE27[DHIF.20_1]-&gt;p01i-&gt;ZPC68[DHIF.26_1]-&gt;P02-&gt;E39_Actor[DHIF.26_2]</td>
+</tr>
+<tr>
+<td>DHIF.27</td>
+<td>obligation role of actor owed</td>
+<td>This field is used to record the role played by an actor who is owed in a declaration of obligation.</td>
+<td>Concept</td>
+<td>-&gt;P9-&gt;ZE27[DHIF.20_1]-&gt;P01i-&gt;ZPC68[DHIF.26_1]-&gt;ZP68.1-&gt;E55_Type[DHIF.27_1]</td>
+</tr>
+<tr>
+<td>DHIF.28</td>
+<td>initiated obligation status</td>
+<td>This field is used to link the documented declaration of obligation to the obligation status which the declaration initiates.</td>
+<td>Reference Model  [DHIM.10_Obligation Status]</td>
+<td>-&gt;P9-&gt;ZE27[DHIF.20_1]-&gt;ZP42-&gt;ZE28[DHIF.28_1]</td>
+</tr>
+<tr>
+<td>DHIF.29</td>
+<td>annulled obligation status</td>
+<td>This field is used to link the documented declaration of obligation to the obligation status which the declaration annuls.</td>
+<td>Reference Model [DHIM.10_Obligation Status]</td>
+<td>-&gt;P9-&gt;ZE27[DHIF.20_1]-&gt;ZP52-&gt;ZE28[DHIF.29_1]</td>
+</tr>
+<tr>
+<td>DHIF.30</td>
+<td>declarative acquisition type</td>
+<td>This field is used to record the formal type of the documented declarative acquisition.</td>
+<td>Concept</td>
+<td>-&gt;P9-&gt;ZE20[DHIF.30_1]-&gt;P2-&gt;E55[DHIF.30_2]</td>
+</tr>
+<tr>
+<td>DHIF.31</td>
+<td>declarative acquisition generic actor receiving</td>
+<td>This field is used to link the documented declarative acquisition to the actor who received title in the transfer.</td>
+<td>Reference Model  [DHIM.1_Person; DHIM.2_Group]</td>
+<td>-&gt;P9-&gt;ZE20[DHIF.30_1]-&gt;P22-&gt;E39[DHIF.31_1]</td>
+</tr>
+<tr>
+<td>DHIF.32</td>
+<td>declarative acquisition generic actor ceding</td>
+<td>This field is used to link the documented declarative acquisition to the actor who ceding title in the transfer.</td>
+<td>Reference Model [DHIM.1_Person; DHIM.2_Group]</td>
+<td>-&gt;P9-&gt;ZE20[DHIF.30_1]-&gt;P23-&gt;E39[DHIF.32_1]</td>
+</tr>
+<tr>
+<td>DHIF.33</td>
+<td>declarative acquisition object transferred</td>
+<td>This field is used to link the documented declarative acquisition to the object over which title is transferred.</td>
+<td>Reference Model [DHIM.4_Physical Object]</td>
+<td>-&gt;P9-&gt;ZE20[DHIF.30_1]-&gt;P24-&gt;E18[DHIF.33_1]</td>
+</tr>
+<tr>
+<td>DHIF.34</td>
+<td>declarative acquisition actor with role owing</td>
+<td>This field is used to link the documented declarative acquisition to an actor that plays a typified role in receiving via the declaration.</td>
+<td>Reference Model  [DHIM.1_Person; DHIM.2_Group]</td>
+<td>-&gt;P9-&gt;ZE20[DHIF.30_1]-&gt;p01i-&gt;PC22[DHIF.34_1]-&gt;P02-&gt;E39_Actor[DHIF.34_2]</td>
+</tr>
+<tr>
+<td>DHIF.35</td>
+<td>declarative acquisition role of actor owing</td>
+<td>This field is used to record the role played by an actor who receives in a declarative acquisition with typified roles.</td>
+<td>Concept</td>
+<td>-&gt;P9-&gt;ZE20[DHIF.30_1]-&gt;p01i-&gt;PC22[DHIF.34_1]-&gt;P22.1-&gt;E55_Type[DHIF.35_1]</td>
+</tr>
+<tr>
+<td>DHIF.36</td>
+<td>declarative acquisition actor with role owed</td>
+<td>This field is used to link the documented declarative acquisition to an actor that plays a typified role in ceding via the declaration.</td>
+<td>Reference Model  [DHIM.1_Person; DHIM.2_Group]</td>
+<td>-&gt;P9-&gt;ZE20[DHIF.30_1]-&gt;p01i-&gt;PC23[DHIF.36_1]-&gt;P02-&gt;E39_Actor[DHIF.36_2]</td>
+</tr>
+<tr>
+<td>DHIF.37</td>
+<td>declarative acquisition role of actor owed</td>
+<td>This field is used to record the role played by an actor who cedes in a declarative acquisition.</td>
+<td>Concept</td>
+<td>-&gt;P9-&gt;ZE20[DHIF.30_1]-&gt;p01i-&gt;PC23[DHIF.36_1]-&gt;P23.1-&gt;E55_Type[DHIF.37_1]</td>
+</tr>
+<tr>
+<td>DHIF.38</td>
+<td>initiated ownership status</td>
+<td>This field is used to link the documented declarative acquisition to the ownership status which the declaration initiates.</td>
+<td>Reference Model  [DHIM.8_Ownership Status]</td>
+<td>-&gt;P9-&gt;ZE20[DHIF.30_1]-&gt;ZP42-&gt;ZE8[DHIF.38_1]</td>
+</tr>
+<tr>
+<td>DHIF.39</td>
+<td>annulled ownership status</td>
+<td>This field is used to link the documented declarative acquisition to the ownership status which the declaration annuls.</td>
+<td>Reference Model  [DHIM.8_Ownership Status]</td>
+<td>-&gt;P9-&gt;ZE20[DHIF.30_1]-&gt;ZP52-&gt;ZE8[DHIF.39_1]</td>
+</tr>
+<tr>
+<td>DHIF.40</td>
+<td>declarative custody transfer type</td>
+<td>This field is used to record the formal type of the documented declarative transfer of custody.</td>
+<td>Concept</td>
+<td>-&gt;P9-&gt;ZE21[DHIF.40_1]-&gt;P2-&gt;E55[DHIF.40_2]</td>
+</tr>
+<tr>
+<td>DHIF.41</td>
+<td>declarative custody transfer generic actor surrendering</td>
+<td>This field is used to link the documented declarative transfer of custody to the actor who surrendered custody in the transfer.</td>
+<td>Reference Model  [DHIM.1_Person; DHIM.2_Group]</td>
+<td>-&gt;P9-&gt;ZE21[DHIF.40_1]-&gt;P28-&gt;E39[DHIF.41_1]</td>
+</tr>
+<tr>
+<td>DHIF.42</td>
+<td>declarative custody transfer generic actor receiving</td>
+<td>This field is used to link the documented declarative transfer of custody to the actor who received custody in the transfer.</td>
+<td>Reference Model  [DHIM.1_Person; DHIM.2_Group]</td>
+<td>-&gt;P9-&gt;ZE21[DHIF.40_1]-&gt;P29-&gt;E39[DHIF.42_1]</td>
+</tr>
+<tr>
+<td>DHIF.43</td>
+<td>declarative custody transfer object transferred</td>
+<td>This field is used to link the documented declarative transfer of custody to the object of which custody is transferred.</td>
+<td>Reference Model  [DHIM.4_Physical Object]</td>
+<td>-&gt;P9-&gt;ZE21[DHIF.40_1]-&gt;P30-&gt;E18[DHIF.43_1]</td>
+</tr>
+<tr>
+<td>DHIF.44</td>
+<td>declarative custody transfer actor with role surrendering</td>
+<td>This field is used to link the documented declarative transfer of custody to an actor that plays a typified role in surrendering custody via the declaration.</td>
+<td>Reference Model  [DHIM.1_Person; DHIM.2_Group]</td>
+<td>-&gt;P9-&gt;ZE21[DHIF.40_1]-&gt;P01i-&gt;PC28[DHIF.44_1]-&gt;P02-&gt;E39_Actor[DHIF.44_2]</td>
+</tr>
+<tr>
+<td>DHIF.45</td>
+<td>declarative custody transfer role of actor surrendering</td>
+<td>This field is used to record the role played by an actor who surrenders custody in a declarative transfer of custody with typified roles.</td>
+<td>Concept</td>
+<td>-&gt;P9-&gt;ZE21[DHIF.40_1]-&gt;P01i-&gt;PC28[DHIF.44_1]-&gt;P28.1-&gt;E55_Type[DHIF.45_1]</td>
+</tr>
+<tr>
+<td>DHIF.46</td>
+<td>declarative custody transfer actor with role receiving</td>
+<td>This field is used to link the documented declarative transfer of custody to an actor that plays a typified role in receiving custody via the declaration.</td>
+<td>Reference Model  [DHIM.1_Person; DHIM.2_Group]</td>
+<td>-&gt;P9-&gt;ZE21[DHIF.40_1]-&gt;p01i-&gt;PC29[DHIF.46_1]-&gt;P02-&gt;E39_Actor[DHIF.46_2]</td>
+</tr>
+<tr>
+<td>DHIF.47</td>
+<td>declarative custody transfer role of actor receiving</td>
+<td>This field is used to record the role played by an actor who receives custody in a declarative transfer of custody with typified roles.</td>
+<td>Concept</td>
+<td>-&gt;P9-&gt;ZE21[DHIF.40_1]-&gt;P01i-&gt;PC29[DHIF.46_1]-&gt;P29.1-&gt;E55_Type[DHIF.47_1]</td>
+</tr>
+<tr>
+<td>DHIF.48</td>
+<td>initiated custodial status</td>
+<td>This field is used to link the documented declarative transfer of custody to the custodial status which the declaration initiates.</td>
+<td>Reference Model [DHIM.9_Custodial Status]</td>
+<td>-&gt;P9-&gt;ZE21[DHIF.40_1]-&gt;ZP42-&gt;ZE7[DHIF.48_1]</td>
+</tr>
+<tr>
+<td>DHIF.49</td>
+<td>annulled custodial status</td>
+<td>This field is used to link the documented declarative transfer of custody to the custodial status which the declaration annuls.</td>
+<td>Reference Model [DHIM.9_Custodial Status]</td>
+<td>-&gt;P9-&gt;ZE21[DHIF.40_1]-&gt;ZP52-&gt;ZE7[DHIF.49_1]</td>
+</tr>
+<tr>
+<td>DHIF.50</td>
+<td>role assignment type</td>
+<td>This field is used to record the formal type of the documented role assignment.</td>
+<td>Concept</td>
+<td>-&gt;P9-&gt;E17[DHIF.50_1]-&gt;P2-&gt;E55[DHIF.50_2]</td>
+</tr>
+<tr>
+<td>DHIF.51</td>
+<td>initiated social status</td>
+<td>This field is used to link the documented role assignment to the social status it initiates.</td>
+<td>Reference Model  [DHIM.11_Social Status]</td>
+<td>-&gt;P9-&gt;E17[DHIF.50_1]-&gt;ZP42-&gt;ZE6[DHIF.51_1]</td>
+</tr>
+<tr>
+<td>DHIF.52</td>
+<td>annulled social status</td>
+<td>This field is used to link the documented role assignment to the social status which it annuls.</td>
+<td>Reference Model   [DHIM.11_Social Status]</td>
+<td>-&gt;P9-&gt;E17[DHIF.50_1]-&gt;ZP52-&gt;ZE6[DHIF.52_1]</td>
+</tr>
+<tr>
+<td>DHIF.149</td>
+<td>group role assignment type</td>
+<td>This field is used to record the formal type of the documented group role assignment.</td>
+<td>Concept</td>
+<td>-&gt;P9-&gt;ZE31[DHIF.149_1]-&gt;P2-&gt;E55[DHIF.149_2]</td>
+</tr>
+<tr>
+<td>DHIF.150</td>
+<td>initiated institutional status</td>
+<td>This field is used to link the documented group role assignment to the institutional status it initiates.</td>
+<td>Reference Model [DHIM.12_Institutional Status]</td>
+<td>-&gt;P9-&gt;ZE31[DHIF.149_1]-&gt;ZP42-&gt;ZE32[DHIF.150_1]</td>
+</tr>
+<tr>
+<td>DHIF.151</td>
+<td>annulled institutional status</td>
+<td>This field is used to link the documented group role assignment to the institutional status which it annuls.</td>
+<td>Reference Model [DHIM.12_Institutional Status]</td>
+<td>-&gt;P9-&gt;ZE31[DHIF.149_1]-&gt;ZP52-&gt;ZE32[DHIF.151_1]</td>
+</tr>
+<tr>
+<td>LAF.39</td>
+<td>Source Reference Work</td>
+<td>This field is used to link the documented legal act to an instance of textual work which references it.</td>
+<td>Reference Model [DHIM.5_Legal Document]</td>
+<td>-&gt;p67i-&gt;E33[39_1]</td>
+</tr>
+<tr>
+<td>PIRF.426</td>
+<td>Digital Reference</td>
+<td>This field is used to link the documented legal act to a digital object, expressed as a uri, which describes it.</td>
+<td>uri</td>
+<td>-&gt;P67i-&gt;D1[426_1]</td>
+</tr>
+<tr>
+<td>PIRF.427</td>
+<td>Digital Reference Type</td>
+<td>This field is used to indicate the type of a a digital object, expressed as a uri, which describes the documented legal act.</td>
+<td>Concept</td>
+<td>-&gt;P67i-&gt;D1[426_1]-&gt;P2-&gt;E55[427_1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-legal-act-ontology-graph">- Legal Act <strong>Ontology Graph</strong></h3>
+<p>[<em>to view the image right click 'open image in a new tab'</em>]
+<img alt="Screenshot" src="../img/act.svg" /></p>
+<h3 id="-legal-act-rdf">- Legal Act <strong>RDF</strong></h3>
+<pre><code>@prefix crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt; .
+@prefix crmaaa: &lt;https://takin.solutions/ontologies/crmaaa/&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+
+&lt;https://linked.art/example/conceptual_object/DHIF.9_1&gt; a crm:E55_Type .
+
+&lt;https://linked.art/example/models/speech_act&gt; a crmaaa:ZE13_Speech_Act ;
+    crm:P01i_is_domain_of &lt;https://linked.art/example/reified_property/DHIF.8_1&gt; ;
+    crm:P14_carried_out_by &lt;https://linked.art/example/actor/21_1&gt; ;
+    crm:P1_is_identified_by &lt;https://linked.art/example/conceptual_object/4_1&gt; ;
+    crm:P2_has_type &lt;https://linked.art/example/type/11_1&gt; ;
+    crm:P4_has_time-span &lt;https://linked.art/example/time_span/22_1&gt; ;
+    crm:P67i_is_referred_to_by &lt;https://linked.art/example/conceptual_object/13_1&gt;,
+        &lt;https://linked.art/example/conceptual_object/39_1&gt;,
+        &lt;https://linked.art/example/conceptual_object/426_1&gt; ;
+    crm:P7_took_place_at &lt;https://linked.art/example/place/19_1&gt; ;
+    crm:P9_consists_of &lt;https://linked.art/example/event/DHIF.50_1&gt;,
+        &lt;https://takin.solutions/ontologies/crmaaa/speech_act/DHIF.10_1&gt;,
+        &lt;https://takin.solutions/ontologies/crmaaa/speech_act/DHIF.149_1&gt;,
+        &lt;https://takin.solutions/ontologies/crmaaa/speech_act/DHIF.20_1&gt;,
+        &lt;https://takin.solutions/ontologies/crmaaa/speech_act/DHIF.30_1&gt;,
+        &lt;https://takin.solutions/ontologies/crmaaa/speech_act/DHIF.40_1&gt; .
+
+&lt;http://vocab.getty.edu/aat/300418049&gt; a crm:E55_Type .
+
+&lt;http://vocab.getty.edu/page/aat/300404670&gt; a crm:E55_Type ;
+    rdfs:label &quot;preferred terms&quot; .
+
+&lt;https://linked.art/example/actor/21_1&gt; a crm:E39_Actor .
+
+&lt;https://linked.art/example/actor/DHIF.11_1&gt; a crm:E39_Actor .
+
+&lt;https://linked.art/example/actor/DHIF.12_1&gt; a crm:E39_Actor .
+
+&lt;https://linked.art/example/actor/DHIF.14_2&gt; a crm:E39_Actor .
+
+&lt;https://linked.art/example/actor/DHIF.16_2&gt; a crm:E39_Actor .
+
+&lt;https://linked.art/example/actor/DHIF.21_1&gt; a crm:E39_Actor .
+
+&lt;https://linked.art/example/actor/DHIF.22_1&gt; a crm:E39_Actor .
+
+&lt;https://linked.art/example/actor/DHIF.24_2&gt; a crm:E39_Actor .
+
+&lt;https://linked.art/example/actor/DHIF.26_2&gt; a crm:E39_Actor .
+
+&lt;https://linked.art/example/actor/DHIF.31_1&gt; a crm:E39_Actor .
+
+&lt;https://linked.art/example/actor/DHIF.32_1&gt; a crm:E39_Actor .
+
+&lt;https://linked.art/example/actor/DHIF.34_2&gt; a crm:E39_Actor .
+
+&lt;https://linked.art/example/actor/DHIF.36_2&gt; a crm:E39_Actor .
+
+&lt;https://linked.art/example/actor/DHIF.41_1&gt; a crm:E39_Actor .
+
+&lt;https://linked.art/example/actor/DHIF.42_1&gt; a crm:E39_Actor .
+
+&lt;https://linked.art/example/actor/DHIF.44_2&gt; a crm:E39_Actor .
+
+&lt;https://linked.art/example/actor/DHIF.46_2&gt; a crm:E39_Actor .
+
+&lt;https://linked.art/example/actor/DHIF.8_2&gt; a crm:E39_Actor .
+
+&lt;https://linked.art/example/conceptual_object/13_1&gt; a crm:E33_Linguistic_Object ;
+    crm:P190_has_symbolic_content &quot;Statement_string_content&quot; ;
+    crm:P2_has_type &lt;https://linked.art/example/type/14_1&gt; ;
+    crm:P67i_is_referred_to_by &lt;https://linked.art/example/statement/55_1&gt; ;
+    crm:P72_has_language &lt;https://linked.art/example/type/16_1&gt; .
+
+&lt;https://linked.art/example/conceptual_object/39_1&gt; a crm:E33_Linguistic_Object .
+
+&lt;https://linked.art/example/conceptual_object/426_1&gt; a crm:D1_Digital_Object ;
+    crm:P2_has_type &lt;https://linked.art/example/type/427_1&gt; .
+
+&lt;https://linked.art/example/conceptual_object/4_1&gt; a crm:E33_E41_Linguistic_Appellation ;
+    crm:P190_has_symbolic_content &quot;Name_string_value&quot; ;
+    crm:P2_has_type &lt;http://vocab.getty.edu/page/aat/300404670&gt; ;
+    crm:P67i_is_referred_to_by &lt;https://linked.art/example/textual_object/44_1&gt; ;
+    crm:P72_has_language &lt;https://linked.art/example/type/7_1&gt; .
+
+&lt;https://linked.art/example/dimension/DHIF.23_1&gt; a crm:E54_Dimension .
+
+&lt;https://linked.art/example/event/DHIF.50_1&gt; a crm:E17_Type_Assignment ;
+    crm:P2_has_type &lt;https://linked.art/example/type/DHIF.50_2&gt; ;
+    crmaaa:ZP42_intentionally_initiates &lt;https://takin.solutions/ontologies/crmaaa/institutional_fact/DHIF.51_1&gt; ;
+    crmaaa:ZP52_intentionally_terminates &lt;https://takin.solutions/ontologies/crmaaa/institutional_fact/DHIF.52_1&gt; .
+
+&lt;https://linked.art/example/physical_object/DHIF.33_1&gt; a crm:E18_Physical_Object .
+
+&lt;https://linked.art/example/physical_object/DHIF.43_1&gt; a crm:E18_Physical_Object .
+
+&lt;https://linked.art/example/place/19_1&gt; a crm:E53_Place .
+
+&lt;https://linked.art/example/reified_property/DHIF.34_1&gt; a crm:PC22_transferred_title_to ;
+    crm:P02_has_range &lt;https://linked.art/example/actor/DHIF.34_2&gt; ;
+    crm:P22.1_in_role_of &lt;https://linked.art/example/type/DHIF.35_1&gt; .
+
+&lt;https://linked.art/example/reified_property/DHIF.44_1&gt; a crm:PC28_custody_surrendeed_by,
+        crm:PC28_custody_surrendered_by ;
+    crm:P02_has_range &lt;https://linked.art/example/actor/DHIF.44_2&gt; ;
+    crm:P28.1_in_role_of &lt;https://linked.art/example/type/DHIF.45_1&gt; .
+
+&lt;https://linked.art/example/reified_property/DHIF.46_1&gt; a crm:PC29_custody_received_by ;
+    crm:P02_has_range &lt;https://linked.art/example/actor/DHIF.46_2&gt; ;
+    crm:P29.1_in_role_of &lt;https://linked.art/example/type/DHIF.47_1&gt; .
+
+&lt;https://linked.art/example/reified_property/DHIF.8_1&gt; a crm:PC14_carried_out_by ;
+    crm:P02_has_range &lt;https://linked.art/example/actor/DHIF.8_2&gt; ;
+    crm:P14.1_in_role_of &lt;https://linked.art/example/type/DHIF.9_1&gt; .
+
+&lt;https://linked.art/example/statement/55_1&gt; a crm:E33_Linguistic_Object .
+
+&lt;https://linked.art/example/textual_object/44_1&gt; a crm:E33_Linguistic_Object .
+
+&lt;https://linked.art/example/thing/DHIF.13_1&gt; a crm:E72_Legal_Object .
+
+&lt;https://linked.art/example/time_span/22_1&gt; a crm:E52_Time-Span ;
+    crm:P81a_end_of_the_begin &quot;2000-01-01T09:00:00&quot; ;
+    crm:P81b_begin_of_the_end &quot;2000-01-01T09:00:00&quot; ;
+    crm:P82a_begin_of_the_begin &quot;2000-01-01T09:00:00&quot; ;
+    crm:P82b_end_of_the_end &quot;2000-01-01T09:00:00&quot; .
+
+&lt;https://linked.art/example/type/11_1&gt; a crm:E55_Type ;
+    crm:P2_has_type &lt;https://linked.art/example/type/12_1&gt; .
+
+&lt;https://linked.art/example/type/12_1&gt; a crm:E55_Type .
+
+&lt;https://linked.art/example/type/14_1&gt; a crm:E55_Type ;
+    crm:P2_has_type &lt;http://vocab.getty.edu/aat/300418049&gt; .
+
+&lt;https://linked.art/example/type/16_1&gt; a crm:E56_Language .
+
+&lt;https://linked.art/example/type/427_1&gt; a crm:E55_Type .
+
+&lt;https://linked.art/example/type/7_1&gt; a crm:E56_Language .
+
+&lt;https://linked.art/example/type/DHIF.10_2&gt; a crm:E55_Type .
+
+&lt;https://linked.art/example/type/DHIF.149_2&gt; a crm:E55_Type .
+
+&lt;https://linked.art/example/type/DHIF.15_1&gt; a crm:E55_Type .
+
+&lt;https://linked.art/example/type/DHIF.17_1&gt; a crm:E55_Type .
+
+&lt;https://linked.art/example/type/DHIF.20_2&gt; a crm:E55_Type .
+
+&lt;https://linked.art/example/type/DHIF.25_1&gt; a crm:E55_Type .
+
+&lt;https://linked.art/example/type/DHIF.27_1&gt; a crm:E55_Type .
+
+&lt;https://linked.art/example/type/DHIF.30_2&gt; a crm:E55_Type .
+
+&lt;https://linked.art/example/type/DHIF.35_1&gt; a crm:E55_Type .
+
+&lt;https://linked.art/example/type/DHIF.37_1&gt; a crm:E55_Type .
+
+&lt;https://linked.art/example/type/DHIF.40_2&gt; a crm:E55_Type .
+
+&lt;https://linked.art/example/type/DHIF.45_1&gt; a crm:E55_Type .
+
+&lt;https://linked.art/example/type/DHIF.47_1&gt; a crm:E55_Type .
+
+&lt;https://linked.art/example/type/DHIF.50_2&gt; a crm:E55_Type .
+
+&lt;https://linked.art/example/type/DHIF.9_1&gt; a crm:E55_Type .
+
+&lt;https://takin.solutions/ontologies/crmaaa/institutional_fact/DHIF.150_1&gt; a crmaaa:ZE32_Institutional_Status .
+
+&lt;https://takin.solutions/ontologies/crmaaa/institutional_fact/DHIF.151_1&gt; a crmaaa:ZE32_Institutional_Status .
+
+&lt;https://takin.solutions/ontologies/crmaaa/institutional_fact/DHIF.18_1&gt; a crmaaa:ZE30_Property_Right_Status .
+
+&lt;https://takin.solutions/ontologies/crmaaa/institutional_fact/DHIF.19_1&gt; a crmaaa:ZE30_Property_Right_Status .
+
+&lt;https://takin.solutions/ontologies/crmaaa/institutional_fact/DHIF.28_1&gt; a crmaaa:ZE28_Obligation_Status .
+
+&lt;https://takin.solutions/ontologies/crmaaa/institutional_fact/DHIF.29_1&gt; a crmaaa:ZE28_Obligation_Status .
+
+&lt;https://takin.solutions/ontologies/crmaaa/institutional_fact/DHIF.38_1&gt; a crmaaa:ZE28_Obligation_Status .
+
+&lt;https://takin.solutions/ontologies/crmaaa/institutional_fact/DHIF.39_1&gt; a crmaaa:ZE28_Obligation_Status .
+
+&lt;https://takin.solutions/ontologies/crmaaa/institutional_fact/DHIF.48_1&gt; a crmaaa:ZE7_Custodial_Status .
+
+&lt;https://takin.solutions/ontologies/crmaaa/institutional_fact/DHIF.49_1&gt; a crmaaa:ZE7_Custodial_Status .
+
+&lt;https://takin.solutions/ontologies/crmaaa/institutional_fact/DHIF.51_1&gt; a crmaaa:ZE6_Social_Status .
+
+&lt;https://takin.solutions/ontologies/crmaaa/institutional_fact/DHIF.52_1&gt; a crmaaa:ZE6_Social_Status .
+
+&lt;https://takin.solutions/ontologies/crmaaa/reified_property/DHIF.14_1&gt; a crmaaa:ZPC61_transferred_property_right_to ;
+    crm:P02_has_range &lt;https://linked.art/example/actor/DHIF.14_2&gt; ;
+    crmaaa:ZP61.1_in_role_of &lt;https://linked.art/example/type/DHIF.15_1&gt; .
+
+&lt;https://takin.solutions/ontologies/crmaaa/reified_property/DHIF.16_1&gt; a crmaaa:ZPC62_transferred_property_right_from ;
+    crm:P02_has_range &lt;https://linked.art/example/actor/DHIF.16_2&gt; ;
+    crmaaa:ZP62.1_in_role_of &lt;https://linked.art/example/type/DHIF.17_1&gt; .
+
+&lt;https://takin.solutions/ontologies/crmaaa/reified_property/DHIF.24_1&gt; a crmaaa:ZPC67_generated_obligation_upon ;
+    crm:P02_has_range &lt;https://linked.art/example/actor/DHIF.24_2&gt; ;
+    crmaaa:ZP67.1_in_role_of &lt;https://linked.art/example/type/DHIF.25_1&gt; .
+
+&lt;https://takin.solutions/ontologies/crmaaa/reified_property/DHIF.26_1&gt; a crmaaa:ZPC68_generated_obligation_to ;
+    crm:P02_has_range &lt;https://linked.art/example/actor/DHIF.26_2&gt; ;
+    crmaaa:ZP68.1_in_role_of &lt;https://linked.art/example/type/DHIF.27_1&gt; .
+
+&lt;https://takin.solutions/ontologies/crmaaa/speech_act/DHIF.10_1&gt; a crmaaa:ZE29_Transfer_of_Property_Right ;
+    crm:P01i_is_domain_of &lt;https://takin.solutions/ontologies/crmaaa/reified_property/DHIF.14_1&gt;,
+        &lt;https://takin.solutions/ontologies/crmaaa/reified_property/DHIF.16_1&gt; ;
+    crm:P2_has_type &lt;https://linked.art/example/type/DHIF.10_2&gt; ;
+    crmaaa:ZP42_intentionally_initiates &lt;https://takin.solutions/ontologies/crmaaa/institutional_fact/DHIF.18_1&gt; ;
+    crmaaa:ZP52_intentionally_terminates &lt;https://takin.solutions/ontologies/crmaaa/institutional_fact/DHIF.19_1&gt; ;
+    crmaaa:ZP61_transferred_property_right_to &lt;https://linked.art/example/actor/DHIF.11_1&gt; ;
+    crmaaa:ZP62_transferred_property_right_from &lt;https://linked.art/example/actor/DHIF.12_1&gt; ;
+    crmaaa:ZP63_transferred_property_right_from &lt;https://linked.art/example/thing/DHIF.13_1&gt; .
+
+&lt;https://takin.solutions/ontologies/crmaaa/speech_act/DHIF.149_1&gt; a crmaaa:ZE31_Group_Role_Assignment ;
+    crm:P2_has_type &lt;https://linked.art/example/type/DHIF.149_2&gt; ;
+    crmaaa:ZP42_intentionally_initiates &lt;https://takin.solutions/ontologies/crmaaa/institutional_fact/DHIF.150_1&gt; ;
+    crmaaa:ZP52_intentionally_terminates &lt;https://takin.solutions/ontologies/crmaaa/institutional_fact/DHIF.151_1&gt; .
+
+&lt;https://takin.solutions/ontologies/crmaaa/speech_act/DHIF.20_1&gt; a crmaaa:ZE27_Declaration_of_Obligation ;
+    crm:P01i_is_domain_of &lt;https://takin.solutions/ontologies/crmaaa/reified_property/DHIF.24_1&gt;,
+        &lt;https://takin.solutions/ontologies/crmaaa/reified_property/DHIF.26_1&gt; ;
+    crm:P2_has_type &lt;https://linked.art/example/type/DHIF.20_2&gt; ;
+    crmaaa:ZP42_intentionally_initiates &lt;https://takin.solutions/ontologies/crmaaa/institutional_fact/DHIF.28_1&gt; ;
+    crmaaa:ZP52_intentionally_terminates &lt;https://takin.solutions/ontologies/crmaaa/institutional_fact/DHIF.29_1&gt; ;
+    crmaaa:ZP67_generated_obligation_upon &lt;https://linked.art/example/actor/DHIF.21_1&gt; ;
+    crmaaa:ZP68_generated_obligation_to &lt;https://linked.art/example/actor/DHIF.22_1&gt; ;
+    crmaaa:ZP69_generated_obligation_of &lt;https://linked.art/example/dimension/DHIF.23_1&gt; .
+
+&lt;https://takin.solutions/ontologies/crmaaa/speech_act/DHIF.30_1&gt; a crmaaa:ZE20_Declaration_of_Acquisition,
+        crmaaa:ZE20_Declarative_Acquisition ;
+    crm:P01i_is_domain_of &lt;https://linked.art/example/reified_property/DHIF.34_1&gt;,
+        &lt;https://linked.art/example/reified_property/DHIF.36_1&gt; ;
+    crm:P22_transferred_title_to &lt;https://linked.art/example/actor/DHIF.31_1&gt; ;
+    crm:P23_transferred_title_from &lt;https://linked.art/example/actor/DHIF.32_1&gt; ;
+    crm:P24_transferred_title_over &lt;https://linked.art/example/physical_object/DHIF.33_1&gt; ;
+    crm:P2_has_type &lt;https://linked.art/example/type/DHIF.30_2&gt; ;
+    crm:p01i_is_domain_of &lt;https://linked.art/example/reified_property/DHIF.36_1&gt; ;
+    crmaaa:ZP42_intentionally_initiates &lt;https://takin.solutions/ontologies/crmaaa/institutional_fact/DHIF.38_1&gt; ;
+    crmaaa:ZP52_intentionally_terminates &lt;https://takin.solutions/ontologies/crmaaa/institutional_fact/DHIF.39_1&gt; .
+
+&lt;https://takin.solutions/ontologies/crmaaa/speech_act/DHIF.40_1&gt; a crmaaa:ZE21_Declarative_Transfer_of_Custody ;
+    crm:P01i_is_domain_of &lt;https://linked.art/example/reified_property/DHIF.44_1&gt;,
+        &lt;https://linked.art/example/reified_property/DHIF.46_1&gt; ;
+    crm:P28_custody_surrendered_by &lt;https://linked.art/example/actor/DHIF.41_1&gt; ;
+    crm:P29_custody_received_by &lt;https://linked.art/example/actor/DHIF.42_1&gt; ;
+    crm:P2_has_type &lt;https://linked.art/example/type/DHIF.40_2&gt; ;
+    crm:P30_transferred_custody_of &lt;https://linked.art/example/physical_object/DHIF.43_1&gt; ;
+    crmaaa:ZP42_intentionally_initiates &lt;https://takin.solutions/ontologies/crmaaa/institutional_fact/DHIF.48_1&gt; ;
+    crmaaa:ZP52_intentionally_terminates &lt;https://takin.solutions/ontologies/crmaaa/institutional_fact/DHIF.49_1&gt; .
+
+&lt;https://linked.art/example/reified_property/DHIF.36_1&gt; a crm:PC23_transferred_title_from ;
+    crm:P02_has_range &lt;https://linked.art/example/actor/DHIF.36_2&gt; ;
+    crm:P23.1_in_role_of &lt;https://linked.art/example/type/DHIF.37_1&gt; .
+
+
+
+
+</code></pre>
+<h3 id="-legal-act-json-ld">- Legal Act <strong>JSON-LD</strong></h3>
+<pre><code>{
+  &quot;@context&quot;: &quot;https://linked.art/ns/v1/linked-art.json&quot;,
+  &quot;@graph&quot;: [
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/place/19_1&quot;,
+      &quot;type&quot;: &quot;Place&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/dimension/DHIF.23_1&quot;,
+      &quot;type&quot;: &quot;Dimension&quot;
+    },
+    {
+      &quot;crm:P02_has_range&quot;: {
+        &quot;id&quot;: &quot;https://linked.art/example/actor/DHIF.14_2&quot;
+      },
+      &quot;https://takin.solutions/ontologies/crmaaa/ZP61.1_in_role_of&quot;: {
+        &quot;id&quot;: &quot;https://linked.art/example/type/DHIF.15_1&quot;
+      },
+      &quot;id&quot;: &quot;https://takin.solutions/ontologies/crmaaa/reified_property/DHIF.14_1&quot;,
+      &quot;type&quot;: &quot;https://takin.solutions/ontologies/crmaaa/ZPC61_transferred_property_right_to&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/actor/DHIF.21_1&quot;,
+      &quot;type&quot;: &quot;Actor&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/type/DHIF.40_2&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://takin.solutions/ontologies/crmaaa/institutional_fact/DHIF.18_1&quot;,
+      &quot;type&quot;: &quot;https://takin.solutions/ontologies/crmaaa/ZE30_Property_Right_Status&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/type/DHIF.27_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;crm:P02_has_range&quot;: {
+        &quot;id&quot;: &quot;https://linked.art/example/actor/DHIF.8_2&quot;
+      },
+      &quot;crm:P14.1_in_role_of&quot;: {
+        &quot;id&quot;: &quot;https://linked.art/example/type/DHIF.9_1&quot;
+      },
+      &quot;id&quot;: &quot;https://linked.art/example/reified_property/DHIF.8_1&quot;,
+      &quot;type&quot;: &quot;crm:PC14_carried_out_by&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/actor/DHIF.41_1&quot;,
+      &quot;type&quot;: &quot;Actor&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/actor/DHIF.8_2&quot;,
+      &quot;type&quot;: &quot;Actor&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/actor/DHIF.14_2&quot;,
+      &quot;type&quot;: &quot;Actor&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/conceptual_object/39_1&quot;,
+      &quot;type&quot;: &quot;LinguisticObject&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/type/DHIF.149_2&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;https://linked.art/example/type/12_1&quot;
+      ],
+      &quot;id&quot;: &quot;https://linked.art/example/type/11_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://takin.solutions/ontologies/crmaaa/institutional_fact/DHIF.19_1&quot;,
+      &quot;type&quot;: &quot;https://takin.solutions/ontologies/crmaaa/ZE30_Property_Right_Status&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/type/DHIF.45_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/actor/DHIF.12_1&quot;,
+      &quot;type&quot;: &quot;Actor&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/actor/DHIF.36_2&quot;,
+      &quot;type&quot;: &quot;Actor&quot;
+    },
+    {
+      &quot;crm:P02_has_range&quot;: {
+        &quot;id&quot;: &quot;https://linked.art/example/actor/DHIF.26_2&quot;
+      },
+      &quot;https://takin.solutions/ontologies/crmaaa/ZP68.1_in_role_of&quot;: {
+        &quot;id&quot;: &quot;https://linked.art/example/type/DHIF.27_1&quot;
+      },
+      &quot;id&quot;: &quot;https://takin.solutions/ontologies/crmaaa/reified_property/DHIF.26_1&quot;,
+      &quot;type&quot;: &quot;https://takin.solutions/ontologies/crmaaa/ZPC68_generated_obligation_to&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/actor/DHIF.34_2&quot;,
+      &quot;type&quot;: &quot;Actor&quot;
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;https://linked.art/example/type/DHIF.10_2&quot;
+      ],
+      &quot;crm:P01i_is_domain_of&quot;: [
+        {
+          &quot;id&quot;: &quot;https://takin.solutions/ontologies/crmaaa/reified_property/DHIF.16_1&quot;
+        },
+        {
+          &quot;id&quot;: &quot;https://takin.solutions/ontologies/crmaaa/reified_property/DHIF.14_1&quot;
+        }
+      ],
+      &quot;https://takin.solutions/ontologies/crmaaa/ZP42_intentionally_initiates&quot;: {
+        &quot;id&quot;: &quot;https://takin.solutions/ontologies/crmaaa/institutional_fact/DHIF.18_1&quot;
+      },
+      &quot;https://takin.solutions/ontologies/crmaaa/ZP52_intentionally_terminates&quot;: {
+        &quot;id&quot;: &quot;https://takin.solutions/ontologies/crmaaa/institutional_fact/DHIF.19_1&quot;
+      },
+      &quot;https://takin.solutions/ontologies/crmaaa/ZP61_transferred_property_right_to&quot;: {
+        &quot;id&quot;: &quot;https://linked.art/example/actor/DHIF.11_1&quot;
+      },
+      &quot;https://takin.solutions/ontologies/crmaaa/ZP62_transferred_property_right_from&quot;: {
+        &quot;id&quot;: &quot;https://linked.art/example/actor/DHIF.12_1&quot;
+      },
+      &quot;https://takin.solutions/ontologies/crmaaa/ZP63_transferred_property_right_from&quot;: {
+        &quot;id&quot;: &quot;https://linked.art/example/thing/DHIF.13_1&quot;
+      },
+      &quot;id&quot;: &quot;https://takin.solutions/ontologies/crmaaa/speech_act/DHIF.10_1&quot;,
+      &quot;type&quot;: &quot;https://takin.solutions/ontologies/crmaaa/ZE29_Transfer_of_Property_Right&quot;
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;https://linked.art/example/type/DHIF.30_2&quot;
+      ],
+      &quot;crm:P01i_is_domain_of&quot;: [
+        {
+          &quot;id&quot;: &quot;https://linked.art/example/reified_property/DHIF.34_1&quot;
+        },
+        {
+          &quot;id&quot;: &quot;https://linked.art/example/reified_property/DHIF.36_1&quot;
+        }
+      ],
+      &quot;crm:P24_transferred_title_over&quot;: {
+        &quot;id&quot;: &quot;https://linked.art/example/physical_object/DHIF.33_1&quot;
+      },
+      &quot;crm:p01i_is_domain_of&quot;: {
+        &quot;id&quot;: &quot;https://linked.art/example/reified_property/DHIF.36_1&quot;
+      },
+      &quot;https://takin.solutions/ontologies/crmaaa/ZP42_intentionally_initiates&quot;: {
+        &quot;id&quot;: &quot;https://takin.solutions/ontologies/crmaaa/institutional_fact/DHIF.38_1&quot;
+      },
+      &quot;https://takin.solutions/ontologies/crmaaa/ZP52_intentionally_terminates&quot;: {
+        &quot;id&quot;: &quot;https://takin.solutions/ontologies/crmaaa/institutional_fact/DHIF.39_1&quot;
+      },
+      &quot;id&quot;: &quot;https://takin.solutions/ontologies/crmaaa/speech_act/DHIF.30_1&quot;,
+      &quot;transferred_title_from&quot;: [
+        &quot;https://linked.art/example/actor/DHIF.32_1&quot;
+      ],
+      &quot;transferred_title_to&quot;: [
+        &quot;https://linked.art/example/actor/DHIF.31_1&quot;
+      ],
+      &quot;type&quot;: [
+        &quot;https://takin.solutions/ontologies/crmaaa/ZE20_Declaration_of_Acquisition&quot;,
+        &quot;https://takin.solutions/ontologies/crmaaa/ZE20_Declarative_Acquisition&quot;
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/type/DHIF.10_2&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;http://vocab.getty.edu/page/aat/300404670&quot;
+      ],
+      &quot;content&quot;: &quot;Name_string_value&quot;,
+      &quot;id&quot;: &quot;https://linked.art/example/conceptual_object/4_1&quot;,
+      &quot;language&quot;: [
+        &quot;https://linked.art/example/type/7_1&quot;
+      ],
+      &quot;referred_to_by&quot;: [
+        &quot;https://linked.art/example/textual_object/44_1&quot;
+      ],
+      &quot;type&quot;: &quot;Name&quot;
+    },
+    {
+      &quot;crm:P81a_end_of_the_begin&quot;: &quot;2000-01-01T09:00:00&quot;,
+      &quot;crm:P81b_begin_of_the_end&quot;: &quot;2000-01-01T09:00:00&quot;,
+      &quot;crm:P82a_begin_of_the_begin&quot;: &quot;2000-01-01T09:00:00&quot;,
+      &quot;crm:P82b_end_of_the_end&quot;: &quot;2000-01-01T09:00:00&quot;,
+      &quot;id&quot;: &quot;https://linked.art/example/time_span/22_1&quot;,
+      &quot;type&quot;: &quot;TimeSpan&quot;
+    },
+    {
+      &quot;crm:P02_has_range&quot;: {
+        &quot;id&quot;: &quot;https://linked.art/example/actor/DHIF.24_2&quot;
+      },
+      &quot;https://takin.solutions/ontologies/crmaaa/ZP67.1_in_role_of&quot;: {
+        &quot;id&quot;: &quot;https://linked.art/example/type/DHIF.25_1&quot;
+      },
+      &quot;id&quot;: &quot;https://takin.solutions/ontologies/crmaaa/reified_property/DHIF.24_1&quot;,
+      &quot;type&quot;: &quot;https://takin.solutions/ontologies/crmaaa/ZPC67_generated_obligation_upon&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/type/7_1&quot;,
+      &quot;type&quot;: &quot;Language&quot;
+    },
+    {
+      &quot;crm:P02_has_range&quot;: {
+        &quot;id&quot;: &quot;https://linked.art/example/actor/DHIF.34_2&quot;
+      },
+      &quot;crm:P22.1_in_role_of&quot;: {
+        &quot;id&quot;: &quot;https://linked.art/example/type/DHIF.35_1&quot;
+      },
+      &quot;id&quot;: &quot;https://linked.art/example/reified_property/DHIF.34_1&quot;,
+      &quot;type&quot;: &quot;crm:PC22_transferred_title_to&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/physical_object/DHIF.33_1&quot;,
+      &quot;type&quot;: &quot;crm:E18_Physical_Object&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/actor/DHIF.16_2&quot;,
+      &quot;type&quot;: &quot;Actor&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/physical_object/DHIF.43_1&quot;,
+      &quot;type&quot;: &quot;crm:E18_Physical_Object&quot;
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;https://linked.art/example/type/DHIF.20_2&quot;
+      ],
+      &quot;crm:P01i_is_domain_of&quot;: [
+        {
+          &quot;id&quot;: &quot;https://takin.solutions/ontologies/crmaaa/reified_property/DHIF.26_1&quot;
+        },
+        {
+          &quot;id&quot;: &quot;https://takin.solutions/ontologies/crmaaa/reified_property/DHIF.24_1&quot;
+        }
+      ],
+      &quot;https://takin.solutions/ontologies/crmaaa/ZP42_intentionally_initiates&quot;: {
+        &quot;id&quot;: &quot;https://takin.solutions/ontologies/crmaaa/institutional_fact/DHIF.28_1&quot;
+      },
+      &quot;https://takin.solutions/ontologies/crmaaa/ZP52_intentionally_terminates&quot;: {
+        &quot;id&quot;: &quot;https://takin.solutions/ontologies/crmaaa/institutional_fact/DHIF.29_1&quot;
+      },
+      &quot;https://takin.solutions/ontologies/crmaaa/ZP67_generated_obligation_upon&quot;: {
+        &quot;id&quot;: &quot;https://linked.art/example/actor/DHIF.21_1&quot;
+      },
+      &quot;https://takin.solutions/ontologies/crmaaa/ZP68_generated_obligation_to&quot;: {
+        &quot;id&quot;: &quot;https://linked.art/example/actor/DHIF.22_1&quot;
+      },
+      &quot;https://takin.solutions/ontologies/crmaaa/ZP69_generated_obligation_of&quot;: {
+        &quot;id&quot;: &quot;https://linked.art/example/dimension/DHIF.23_1&quot;
+      },
+      &quot;id&quot;: &quot;https://takin.solutions/ontologies/crmaaa/speech_act/DHIF.20_1&quot;,
+      &quot;type&quot;: &quot;https://takin.solutions/ontologies/crmaaa/ZE27_Declaration_of_Obligation&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/statement/55_1&quot;,
+      &quot;type&quot;: &quot;LinguisticObject&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/type/DHIF.15_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://takin.solutions/ontologies/crmaaa/institutional_fact/DHIF.29_1&quot;,
+      &quot;type&quot;: &quot;https://takin.solutions/ontologies/crmaaa/ZE28_Obligation_Status&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/type/DHIF.35_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;https://linked.art/example/type/DHIF.50_2&quot;
+      ],
+      &quot;https://takin.solutions/ontologies/crmaaa/ZP42_intentionally_initiates&quot;: {
+        &quot;id&quot;: &quot;https://takin.solutions/ontologies/crmaaa/institutional_fact/DHIF.51_1&quot;
+      },
+      &quot;https://takin.solutions/ontologies/crmaaa/ZP52_intentionally_terminates&quot;: {
+        &quot;id&quot;: &quot;https://takin.solutions/ontologies/crmaaa/institutional_fact/DHIF.52_1&quot;
+      },
+      &quot;id&quot;: &quot;https://linked.art/example/event/DHIF.50_1&quot;,
+      &quot;type&quot;: &quot;TypeAssignment&quot;
+    },
+    {
+      &quot;crm:P02_has_range&quot;: {
+        &quot;id&quot;: &quot;https://linked.art/example/actor/DHIF.36_2&quot;
+      },
+      &quot;crm:P23.1_in_role_of&quot;: {
+        &quot;id&quot;: &quot;https://linked.art/example/type/DHIF.37_1&quot;
+      },
+      &quot;id&quot;: &quot;https://linked.art/example/reified_property/DHIF.36_1&quot;,
+      &quot;type&quot;: &quot;crm:PC23_transferred_title_from&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/type/DHIF.30_2&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://takin.solutions/ontologies/crmaaa/institutional_fact/DHIF.51_1&quot;,
+      &quot;type&quot;: &quot;https://takin.solutions/ontologies/crmaaa/ZE6_Social_Status&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/type/DHIF.37_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/type/DHIF.50_2&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://takin.solutions/ontologies/crmaaa/institutional_fact/DHIF.49_1&quot;,
+      &quot;type&quot;: &quot;https://takin.solutions/ontologies/crmaaa/ZE7_Custodial_Status&quot;
+    },
+    {
+      &quot;crm:P02_has_range&quot;: {
+        &quot;id&quot;: &quot;https://linked.art/example/actor/DHIF.46_2&quot;
+      },
+      &quot;crm:P29.1_in_role_of&quot;: {
+        &quot;id&quot;: &quot;https://linked.art/example/type/DHIF.47_1&quot;
+      },
+      &quot;id&quot;: &quot;https://linked.art/example/reified_property/DHIF.46_1&quot;,
+      &quot;type&quot;: &quot;crm:PC29_custody_received_by&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/type/DHIF.25_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/type/427_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://takin.solutions/ontologies/crmaaa/institutional_fact/DHIF.151_1&quot;,
+      &quot;type&quot;: &quot;https://takin.solutions/ontologies/crmaaa/ZE32_Institutional_Status&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/type/12_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;https://linked.art/example/type/DHIF.149_2&quot;
+      ],
+      &quot;https://takin.solutions/ontologies/crmaaa/ZP42_intentionally_initiates&quot;: {
+        &quot;id&quot;: &quot;https://takin.solutions/ontologies/crmaaa/institutional_fact/DHIF.150_1&quot;
+      },
+      &quot;https://takin.solutions/ontologies/crmaaa/ZP52_intentionally_terminates&quot;: {
+        &quot;id&quot;: &quot;https://takin.solutions/ontologies/crmaaa/institutional_fact/DHIF.151_1&quot;
+      },
+      &quot;id&quot;: &quot;https://takin.solutions/ontologies/crmaaa/speech_act/DHIF.149_1&quot;,
+      &quot;type&quot;: &quot;https://takin.solutions/ontologies/crmaaa/ZE31_Group_Role_Assignment&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/actor/DHIF.46_2&quot;,
+      &quot;type&quot;: &quot;Actor&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://takin.solutions/ontologies/crmaaa/institutional_fact/DHIF.48_1&quot;,
+      &quot;type&quot;: &quot;https://takin.solutions/ontologies/crmaaa/ZE7_Custodial_Status&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/textual_object/44_1&quot;,
+      &quot;type&quot;: &quot;LinguisticObject&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/actor/DHIF.42_1&quot;,
+      &quot;type&quot;: &quot;Actor&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/type/DHIF.20_2&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/actor/DHIF.11_1&quot;,
+      &quot;type&quot;: &quot;Actor&quot;
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;https://linked.art/example/type/427_1&quot;
+      ],
+      &quot;id&quot;: &quot;https://linked.art/example/conceptual_object/426_1&quot;,
+      &quot;type&quot;: &quot;crm:D1_Digital_Object&quot;
+    },
+    {
+      &quot;_label&quot;: &quot;preferred terms&quot;,
+      &quot;id&quot;: &quot;http://vocab.getty.edu/page/aat/300404670&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;crm:P02_has_range&quot;: {
+        &quot;id&quot;: &quot;https://linked.art/example/actor/DHIF.16_2&quot;
+      },
+      &quot;https://takin.solutions/ontologies/crmaaa/ZP62.1_in_role_of&quot;: {
+        &quot;id&quot;: &quot;https://linked.art/example/type/DHIF.17_1&quot;
+      },
+      &quot;id&quot;: &quot;https://takin.solutions/ontologies/crmaaa/reified_property/DHIF.16_1&quot;,
+      &quot;type&quot;: &quot;https://takin.solutions/ontologies/crmaaa/ZPC62_transferred_property_right_from&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/actor/DHIF.32_1&quot;,
+      &quot;type&quot;: &quot;Actor&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://takin.solutions/ontologies/crmaaa/institutional_fact/DHIF.150_1&quot;,
+      &quot;type&quot;: &quot;https://takin.solutions/ontologies/crmaaa/ZE32_Institutional_Status&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/actor/DHIF.31_1&quot;,
+      &quot;type&quot;: &quot;Actor&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/conceptual_object/DHIF.9_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://takin.solutions/ontologies/crmaaa/institutional_fact/DHIF.52_1&quot;,
+      &quot;type&quot;: &quot;https://takin.solutions/ontologies/crmaaa/ZE6_Social_Status&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/actor/DHIF.22_1&quot;,
+      &quot;type&quot;: &quot;Actor&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/actor/DHIF.26_2&quot;,
+      &quot;type&quot;: &quot;Actor&quot;
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;https://linked.art/example/type/DHIF.40_2&quot;
+      ],
+      &quot;crm:P01i_is_domain_of&quot;: [
+        {
+          &quot;id&quot;: &quot;https://linked.art/example/reified_property/DHIF.46_1&quot;
+        },
+        {
+          &quot;id&quot;: &quot;https://linked.art/example/reified_property/DHIF.44_1&quot;
+        }
+      ],
+      &quot;https://takin.solutions/ontologies/crmaaa/ZP42_intentionally_initiates&quot;: {
+        &quot;id&quot;: &quot;https://takin.solutions/ontologies/crmaaa/institutional_fact/DHIF.48_1&quot;
+      },
+      &quot;https://takin.solutions/ontologies/crmaaa/ZP52_intentionally_terminates&quot;: {
+        &quot;id&quot;: &quot;https://takin.solutions/ontologies/crmaaa/institutional_fact/DHIF.49_1&quot;
+      },
+      &quot;id&quot;: &quot;https://takin.solutions/ontologies/crmaaa/speech_act/DHIF.40_1&quot;,
+      &quot;transferred_custody_from&quot;: [
+        &quot;https://linked.art/example/actor/DHIF.41_1&quot;
+      ],
+      &quot;transferred_custody_of&quot;: [
+        &quot;https://linked.art/example/physical_object/DHIF.43_1&quot;
+      ],
+      &quot;transferred_custody_to&quot;: [
+        &quot;https://linked.art/example/actor/DHIF.42_1&quot;
+      ],
+      &quot;type&quot;: &quot;https://takin.solutions/ontologies/crmaaa/ZE21_Declarative_Transfer_of_Custody&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://takin.solutions/ontologies/crmaaa/institutional_fact/DHIF.28_1&quot;,
+      &quot;type&quot;: &quot;https://takin.solutions/ontologies/crmaaa/ZE28_Obligation_Status&quot;
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;https://linked.art/example/type/14_1&quot;
+      ],
+      &quot;content&quot;: &quot;Statement_string_content&quot;,
+      &quot;id&quot;: &quot;https://linked.art/example/conceptual_object/13_1&quot;,
+      &quot;language&quot;: [
+        &quot;https://linked.art/example/type/16_1&quot;
+      ],
+      &quot;referred_to_by&quot;: [
+        &quot;https://linked.art/example/statement/55_1&quot;
+      ],
+      &quot;type&quot;: &quot;LinguisticObject&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/thing/DHIF.13_1&quot;,
+      &quot;type&quot;: &quot;LegalObject&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/actor/21_1&quot;,
+      &quot;type&quot;: &quot;Actor&quot;
+    },
+    {
+      &quot;crm:P02_has_range&quot;: {
+        &quot;id&quot;: &quot;https://linked.art/example/actor/DHIF.44_2&quot;
+      },
+      &quot;crm:P28.1_in_role_of&quot;: {
+        &quot;id&quot;: &quot;https://linked.art/example/type/DHIF.45_1&quot;
+      },
+      &quot;id&quot;: &quot;https://linked.art/example/reified_property/DHIF.44_1&quot;,
+      &quot;type&quot;: [
+        &quot;crm:PC28_custody_surrendeed_by&quot;,
+        &quot;crm:PC28_custody_surrendered_by&quot;
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/type/DHIF.47_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/type/16_1&quot;,
+      &quot;type&quot;: &quot;Language&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/actor/DHIF.44_2&quot;,
+      &quot;type&quot;: &quot;Actor&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/type/DHIF.9_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/actor/DHIF.24_2&quot;,
+      &quot;type&quot;: &quot;Actor&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/type/DHIF.17_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;id&quot;: &quot;http://vocab.getty.edu/aat/300418049&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://takin.solutions/ontologies/crmaaa/institutional_fact/DHIF.39_1&quot;,
+      &quot;type&quot;: &quot;https://takin.solutions/ontologies/crmaaa/ZE28_Obligation_Status&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://takin.solutions/ontologies/crmaaa/institutional_fact/DHIF.38_1&quot;,
+      &quot;type&quot;: &quot;https://takin.solutions/ontologies/crmaaa/ZE28_Obligation_Status&quot;
+    },
+    {
+      &quot;carried_out_by&quot;: [
+        &quot;https://linked.art/example/actor/21_1&quot;
+      ],
+      &quot;classified_as&quot;: [
+        &quot;https://linked.art/example/type/11_1&quot;
+      ],
+      &quot;crm:P01i_is_domain_of&quot;: {
+        &quot;id&quot;: &quot;https://linked.art/example/reified_property/DHIF.8_1&quot;
+      },
+      &quot;crm:P9_consists_of&quot;: [
+        {
+          &quot;id&quot;: &quot;https://linked.art/example/event/DHIF.50_1&quot;
+        },
+        {
+          &quot;id&quot;: &quot;https://takin.solutions/ontologies/crmaaa/speech_act/DHIF.30_1&quot;
+        },
+        {
+          &quot;id&quot;: &quot;https://takin.solutions/ontologies/crmaaa/speech_act/DHIF.149_1&quot;
+        },
+        {
+          &quot;id&quot;: &quot;https://takin.solutions/ontologies/crmaaa/speech_act/DHIF.20_1&quot;
+        },
+        {
+          &quot;id&quot;: &quot;https://takin.solutions/ontologies/crmaaa/speech_act/DHIF.40_1&quot;
+        },
+        {
+          &quot;id&quot;: &quot;https://takin.solutions/ontologies/crmaaa/speech_act/DHIF.10_1&quot;
+        }
+      ],
+      &quot;id&quot;: &quot;https://linked.art/example/models/speech_act&quot;,
+      &quot;identified_by&quot;: [
+        &quot;https://linked.art/example/conceptual_object/4_1&quot;
+      ],
+      &quot;referred_to_by&quot;: [
+        &quot;https://linked.art/example/conceptual_object/39_1&quot;,
+        &quot;https://linked.art/example/conceptual_object/13_1&quot;,
+        &quot;https://linked.art/example/conceptual_object/426_1&quot;
+      ],
+      &quot;timespan&quot;: &quot;https://linked.art/example/time_span/22_1&quot;,
+      &quot;took_place_at&quot;: [
+        &quot;https://linked.art/example/place/19_1&quot;
+      ],
+      &quot;type&quot;: &quot;https://takin.solutions/ontologies/crmaaa/ZE13_Speech_Act&quot;
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;http://vocab.getty.edu/aat/300418049&quot;
+      ],
+      &quot;id&quot;: &quot;https://linked.art/example/type/14_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    }
+  ]
+}
+
+
+</code></pre>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../rights/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../rights/" class="btn btn-xs btn-link">
+        Property Right Status
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../document/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../document/" class="btn btn-xs btn-link">
+        Legal Document
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>

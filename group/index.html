@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <link rel="canonical" href="https://dhidocumentation.github.io/group/">
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Group - DHI Data Model</title>
+    <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Group", url: "#_top", children: [
+              {title: "- Group Ontology Graph", url: "#-group-ontology-graph" },
+              {title: "- Group  RDF", url: "#-group-rdf" },
+              {title: "- Group JSON-LD", url: "#-group-json-ld" },
+          ]},
+        ];
+
+    </script>
+    <script src="../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../place/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../place/" class="btn btn-xs btn-link">
+        Place
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../person/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../person/" class="btn btn-xs btn-link">
+        Person
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <p><strong>Group</strong></p>
+<p><strong>Author:</strong> Takin.solutions Ltd.</p>
+<p><strong>Version:</strong> 1.0</p>
+<h2 id="group"><strong>Group</strong></h2>
+<p>Two or more people, potentially sub-divided into further groups, that can act collectively. For example a business or a religious organization.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Name</th>
+<th>URI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Root Ontology Node</td>
+<td>E74 Group</td>
+<td>https://cidoc-crm.org/Entity/E74-Group/version-7.1.1</td>
+</tr>
+<tr>
+<td>Type Differentiator</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Filed ID</th>
+<th>Name</th>
+<th>Description</th>
+<th>Data Type</th>
+<th>CRM Path</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LAF.6</td>
+<td>Name</td>
+<td>This field is used to record the string value of the name attributed to the documented group.</td>
+<td>String</td>
+<td>-&gt;p1-&gt;E33_E41[4_1]-&gt;p190-&gt;rdf:literal</td>
+</tr>
+<tr>
+<td>LAF.5</td>
+<td>Name Type</td>
+<td>This field is used to record the type of the name attributed to the documented group.</td>
+<td>Concept</td>
+<td>-&gt;p1-&gt;E33_41[4_1]-&gt;p2-&gt;E55[5_1]</td>
+</tr>
+<tr>
+<td>LAF.7</td>
+<td>Name Language</td>
+<td>This field is used to record the language of the name attributed to the documented group.</td>
+<td>Concept</td>
+<td>-&gt;p1-&gt;E33_E41[4_1]-&gt;p72-&gt;E56[7_1]</td>
+</tr>
+<tr>
+<td>LAF.44</td>
+<td>Source Reference Work for Name</td>
+<td>This field is used to link to a source text in which the name denoting the documented group is used.</td>
+<td>Reference Model [DHIM.5_Legal Document ]</td>
+<td>-&gt;p1-&gt;E33_E41[4_1]-&gt;p67i-&gt;E33[44_1]</td>
+</tr>
+<tr>
+<td>LAF.11</td>
+<td>Type</td>
+<td>This field is used to record the formal type of the documented group.</td>
+<td>Concept</td>
+<td>-&gt;p2-&gt;E55[11_1]</td>
+</tr>
+<tr>
+<td>LAF.12</td>
+<td>Meta-type</td>
+<td>This field is used to record the metatype attributed to a formal classification. The function of a metatype is to enable the programmatic distinction between different kinds of type applied to the same documented entity.</td>
+<td>Concept</td>
+<td>-&gt;p2-&gt;E55[11_1]-&gt;p2-&gt;E55 [12_1]</td>
+</tr>
+<tr>
+<td>LAF.15</td>
+<td>Statement</td>
+<td>This field is used to record the actual textual content of the statement describing the documented group.</td>
+<td>String</td>
+<td>-&gt;p67i-&gt;E33[13_1]-&gt;p190-&gt;rdf:literal</td>
+</tr>
+<tr>
+<td>LAF.14</td>
+<td>Statement Type</td>
+<td>This field is used to record the formal type of the statement made about the documented group.</td>
+<td>Concept</td>
+<td>-&gt;p67i-&gt;E33[13_1]-&gt;p2-&gt;E55[14_1]</td>
+</tr>
+<tr>
+<td>LAF.16</td>
+<td>Statement Language</td>
+<td>This field is used to record the language of the statement describing the documented group.</td>
+<td>Concept</td>
+<td>-&gt;p67i-&gt;E33[13_1]-&gt;p72-&gt;E56[16_1]</td>
+</tr>
+<tr>
+<td>LAF.55</td>
+<td>Source Reference Work for Statement</td>
+<td>This field is used to link to a source text from which the statement describing the documented group is derived.</td>
+<td>Reference Model [DHIM.5_Legal Document ]</td>
+<td>-&gt;p67i-&gt;E33[13_1]-&gt;p67i-&gt;E33[55_1]</td>
+</tr>
+<tr>
+<td>LAF.10</td>
+<td>Identifier</td>
+<td>This field is used to record an identifier attributed to the documented group.</td>
+<td>String</td>
+<td>-&gt;p1-&gt;E42[8_1]-&gt;p190-&gt;rdf:literal</td>
+</tr>
+<tr>
+<td>LAF.9</td>
+<td>Identifier Type</td>
+<td>This field is used to record the type of the identifier attributed to the documented group.</td>
+<td>Concept</td>
+<td>-&gt;p1-&gt;E42[8_1]-&gt;p2-&gt;E55[9_1]</td>
+</tr>
+<tr>
+<td>LAF.167</td>
+<td>Member of Group</td>
+<td>This field is used to link the documented group to a broader group of which it forms a part.</td>
+<td>Reference Model [DHIM.2_Group]</td>
+<td>-&gt;P107i-&gt;E74[167_1]</td>
+</tr>
+<tr>
+<td>LAF.172</td>
+<td>Actor Residence or Associated Location</td>
+<td>This field is used to link the documented group to a place at which they have been located.</td>
+<td>Reference Model [DHIM.3_Place]</td>
+<td>-&gt;P74-&gt;E53[172_1]</td>
+</tr>
+<tr>
+<td>LAF.134</td>
+<td>Type</td>
+<td>This field is used to record the formal type of the documented actor's professional activity.</td>
+<td>Concept</td>
+<td>-&gt;P14i-&gt;E7[126_1]-&gt;P2-&gt;E55[134_1]</td>
+</tr>
+<tr>
+<td>LAF.126</td>
+<td>Location</td>
+<td>This field is used to link the documented actor's professional activity to a location at which it was carried out.</td>
+<td>Reference Model [DHIM.3_Place]</td>
+<td>-&gt;P14i-&gt;E7[126_1]-&gt;P7-&gt;E53[126_2]</td>
+</tr>
+<tr>
+<td>LAF.133</td>
+<td>Timespan</td>
+<td>This field is used to link the documented actor's professional activity to an instance of time-span recording the temporal extent of the activity.</td>
+<td>Collection [LAP.6_TimeSpan]</td>
+<td>-&gt;P14i-&gt;E7[126_1]-&gt;P4-&gt;E52[133_1]</td>
+</tr>
+<tr>
+<td>LAF.138</td>
+<td>Statement</td>
+<td>This field is used to link the documented actor's professional activity to a statement that describes it.</td>
+<td>Collection [LAP.4_Statement]</td>
+<td>-&gt;P14i-&gt;E7[126_1]-&gt;P67i-&gt;E33[138_1]</td>
+</tr>
+<tr>
+<td>DHIF.148</td>
+<td>Document Used</td>
+<td>This field is used to link the documented professional activity to an instance of textual work used in the exercise of this activity in a manner consequential to its outcome.</td>
+<td>Reference Model  [DHIM.5_Legal Document]</td>
+<td>-&gt;P14i-&gt;E7[126_1]-&gt;P16-&gt;E33[DHIF.148_1]</td>
+</tr>
+<tr>
+<td>LAF.147</td>
+<td>Type</td>
+<td>This field is used to record the formal type of the documented group formation activity.</td>
+<td>Concept</td>
+<td>-&gt;P95i-&gt;E66[139_1]-&gt;P2-&gt;E55[147_1]</td>
+</tr>
+<tr>
+<td>LAF.139</td>
+<td>Location</td>
+<td>This field is used to link the documented group formation activity to a location at which it was carried out.</td>
+<td>Reference Model [DHIM.3_Place]</td>
+<td>-&gt;P95i-&gt;E66[139_1]-&gt;P7-&gt;E53[139_2]</td>
+</tr>
+<tr>
+<td>LAF.142</td>
+<td>Actor</td>
+<td>This field is used to link the documented group formation activity to an actor responsible for carrying it out.</td>
+<td>Reference Model  [DHIM.1_Person; DHIM.2_Group]</td>
+<td>-&gt;P95i-&gt;E66[139_1]-&gt;P14-&gt;E39[142_1]</td>
+</tr>
+<tr>
+<td>LAF.146</td>
+<td>Timespan</td>
+<td>This field is used to link the documented group formation activity to an instance of time-span recording the temporal extent of the activity.</td>
+<td>Collection  [LAP.6_TimeSpan]</td>
+<td>-&gt;P95i-&gt;E66[139_1]-&gt;P4-&gt;E52[146_1]</td>
+</tr>
+<tr>
+<td>DHIF.143</td>
+<td>Document Used</td>
+<td>This field is used to link the documented group formation activity to an instance of textual work used in the exercise of this activity in a manner consequential to its outcome.</td>
+<td>Reference Model  [DHIM.5_Legal Document]</td>
+<td>-&gt;P95i-&gt;E66[139_1]-&gt;P16-&gt;E33[DHIF.143_1]</td>
+</tr>
+<tr>
+<td>LAF.151</td>
+<td>Statement</td>
+<td>This field is used to link the documented group formation activity to a statement that describes it.</td>
+<td>Collection [LAP.4_Statement]</td>
+<td>-&gt;P95i-&gt;E66[139_1]-&gt;P67i-&gt;E33[151_1]</td>
+</tr>
+<tr>
+<td>LAF.161</td>
+<td>Type</td>
+<td>This field is used to record the formal type of the documented group dissolution activity.</td>
+<td>Concept</td>
+<td>-&gt;P99i-&gt;E68[153_1]-&gt;P2-&gt;E55[161_1]</td>
+</tr>
+<tr>
+<td>LAF.153</td>
+<td>Location</td>
+<td>This field is used to link the documented group dissolution activity to a location at which it was carried out.</td>
+<td>Reference Model [DHIM.3_Place]</td>
+<td>-&gt;P99i-&gt;E68[153_1]-&gt;P7-&gt;E53[126_2]</td>
+</tr>
+<tr>
+<td>DHIF.145</td>
+<td>Actor</td>
+<td>This field is used to link the documented group dissolution activity to an actor responsible for carrying it out.</td>
+<td>Reference Model  [DHIM.1_Person; DHIM.2_Group]</td>
+<td>-&gt;P99i-&gt;E68[153_1]-&gt;P14-&gt;E39[DHIF.145_1]</td>
+</tr>
+<tr>
+<td>LAF.160</td>
+<td>Timespan</td>
+<td>This field is used to link the documented group dissolution activity to an instance of time-span recording the temporal extent of the activity.</td>
+<td>Collection [LAP.6_TimeSpan]</td>
+<td>-&gt;P99i-&gt;E68[153_1]-&gt;P4-&gt;E52[160_1]</td>
+</tr>
+<tr>
+<td>DHIF.144</td>
+<td>Document Used</td>
+<td>This field is used to link the documented group dissolution activity to an instance of textual work used in the exercise of this activity in a manner consequential to its outcome.</td>
+<td>Reference Model [DHIM.5_Legal Document]</td>
+<td>-&gt;P99i-&gt;E68[153_1]-&gt;P16-&gt;E33[DHIF.144_1]</td>
+</tr>
+<tr>
+<td>LAF.165</td>
+<td>Statement</td>
+<td>This field is used to link the documented group dissolution activity to a statement that describes it.</td>
+<td>Collection [LAP.4_Statement]</td>
+<td>-&gt;P99i-&gt;E68[153_1]-&gt;P67i-&gt;E33[165_1]</td>
+</tr>
+<tr>
+<td>LAF.209</td>
+<td>Type</td>
+<td>This field is used to record the formal type of the documented group joining activity.</td>
+<td>Concept</td>
+<td>-&gt;P143i-&gt;E85[201_1]-&gt;P2-&gt;E55[209_1]</td>
+</tr>
+<tr>
+<td>LAF.201</td>
+<td>Location</td>
+<td>This field is used to link the documented group joining activity to a location at which it was carried out.</td>
+<td>Reference Model [DHIM.3_Place]</td>
+<td>-&gt;P143i-&gt;E85[201_1]-&gt;P7-&gt;E53[201_2]</td>
+</tr>
+<tr>
+<td>LAF.204</td>
+<td>Actor</td>
+<td>This field is used to link the documented group joining activity to an actor responsible for carrying it out.</td>
+<td>Reference Model   [DHIM.1_Person; DHIM.2_Group]</td>
+<td>-&gt;P143i-&gt;E85[201_1]-&gt;P14-&gt;E39[204_1]</td>
+</tr>
+<tr>
+<td>LAF.208</td>
+<td>Timespand</td>
+<td>This field is used to link the documented group joining activity to an instance of time-span recording the temporal extent of the activity.</td>
+<td>Collection [LAP.6_TimeSpan]</td>
+<td>-&gt;P143i-&gt;E85[201_1]-&gt;P4-&gt;E52[208_1]</td>
+</tr>
+<tr>
+<td>DHIF.146</td>
+<td>Document Used</td>
+<td>This field is used to link the documented group joining activity to an instance of textual work used in the exercise of this activity in a manner consequential to its outcome.</td>
+<td>Reference Model [DHIM.5_Legal Document]</td>
+<td>-&gt;P143i-&gt;E85[201_1]-&gt;P16-&gt;E33[DHIF.146_1]</td>
+</tr>
+<tr>
+<td>LAF.213</td>
+<td>Statement</td>
+<td>This field is used to link the documented group joining activity to a statement that describes it.</td>
+<td>Collection [LAP.4_Statement]</td>
+<td>-&gt;P143i-&gt;E85[201_1]-&gt;P67i-&gt;E33[213_1]</td>
+</tr>
+<tr>
+<td>LAF.214</td>
+<td>Group Joined</td>
+<td>This field is used to link to the group which is joined via the group joining activity.</td>
+<td>Reference Model [DHIM.2_Group]</td>
+<td>-&gt;P143i-&gt;E85[201_1]-&gt;P144-&gt;E74[214_1]</td>
+</tr>
+<tr>
+<td>LAF.223</td>
+<td>Type</td>
+<td>This field is used to record the formal type of the documented group leaving activity.</td>
+<td>Concept</td>
+<td>-&gt;P145i-&gt;E86[215_1]-&gt;P2-&gt;E55[223_1]</td>
+</tr>
+<tr>
+<td>LAF.215</td>
+<td>Location</td>
+<td>This field is used to link the documented group leaving activity to a location at which it was carried out.</td>
+<td>Reference Model [DHIM.3_Place]</td>
+<td>-&gt;P145i-&gt;E86[215_1]-&gt;P7-&gt;E53[215_2]</td>
+</tr>
+<tr>
+<td>LAF.218</td>
+<td>Actor</td>
+<td>This field is used to link the documented group leaving activity to an actor responsible for carrying it out.</td>
+<td>Reference Model [DHIM.1_Person; DHIM.2_Group]</td>
+<td>-&gt;P145i-&gt;E86[215_1]-&gt;P14-&gt;E39[218_1]</td>
+</tr>
+<tr>
+<td>LAF.222</td>
+<td>Timespan</td>
+<td>This field is used to link the documented group leaving activity to an instance of time-span recording the temporal extent of the activity.</td>
+<td>Collection  [LAP.6_TimeSpan]</td>
+<td>-&gt;P145i-&gt;E86[215_1]-&gt;P4-&gt;E52[222_1]</td>
+</tr>
+<tr>
+<td>DHIF.147</td>
+<td>Document Used</td>
+<td>This field is used to link the documented group leaving activity to an instance of textual work used in the exercise of this activity in a manner consequential to its outcome.</td>
+<td>Reference Model [DHIM.5_Legal Document]</td>
+<td>-&gt;P145i-&gt;E86[215_1]-&gt;P16-&gt;E33[DHIF.147_1]</td>
+</tr>
+<tr>
+<td>LAF.227</td>
+<td>Statement</td>
+<td>This field is used to link the documented group leaving activity to a statement that describes it.</td>
+<td>Collection  [LAP.4_Statement]</td>
+<td>-&gt;P145i-&gt;E86[215_1]-&gt;P67i-&gt;E33[227_1]</td>
+</tr>
+<tr>
+<td>LAF.228</td>
+<td>Group Left</td>
+<td>This field is used to link to the group which is left via the group leaving activity.</td>
+<td>Reference Model [DHIM.2_Group]</td>
+<td>-&gt;P145i-&gt;E86[215_1]-&gt;P146-&gt;E74[228 _1]</td>
+</tr>
+<tr>
+<td>LAF.39</td>
+<td>Source Reference Work</td>
+<td>This field is used to link the documented group to an instance of textual work which references it.</td>
+<td>Reference Model [DHIM.5_Legal Document]</td>
+<td>-&gt;p67i-&gt;E33[39_1]</td>
+</tr>
+<tr>
+<td>PIRF.426</td>
+<td>Digital Reference</td>
+<td>This field is used to link the documented group to a digital object, expressed as a uri, which describes it.</td>
+<td>uri</td>
+<td>-&gt;P67i-&gt;D1[426_1]</td>
+</tr>
+<tr>
+<td>PIRF.427</td>
+<td>Digital Reference Type</td>
+<td>This field is used to indicate the type of a a digital object, expressed as a uri, which describes the documented group.</td>
+<td>Concept</td>
+<td>-&gt;P67i-&gt;D1[426_1]-&gt;P2-&gt;E55[427_1]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-group-ontology-graph">- Group <strong>Ontology Graph</strong></h3>
+<p>[<em>to view the image right click 'open image in a new tab'</em>]
+<img alt="Screenshot" src="../img/group.svg" /></p>
+<h3 id="-group-rdf">- Group  <strong>RDF</strong></h3>
+<pre><code>@prefix crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+
+&lt;https://linked.art/example/models/group&gt; a crm:E74_Group ;
+    crm:P107i_is_current_or_former_member_of &lt;https://linked.art/example/actor/167_1&gt; ;
+    crm:P143i_was_joined_by &lt;https://linked.art/example/event/201_1&gt; ;
+    crm:P145i_left_by &lt;https://linked.art/example/event/215_1&gt; ;
+    crm:P14i_performed &lt;https://linked.art/example/event/126_1&gt; ;
+    crm:P1_is_identified_by &lt;https://linked.art/example/conceptual_object/4_1&gt;,
+        &lt;https://linked.art/example/conceptual_object/8_1&gt; ;
+    crm:P2_has_type &lt;https://linked.art/example/type/11_1&gt; ;
+    crm:P67i_is_referred_to_by &lt;https://linked.art/example/conceptual_object/13_1&gt;,
+        &lt;https://linked.art/example/conceptual_object/39_1&gt;,
+        &lt;https://linked.art/example/conceptual_object/426_1&gt; ;
+    crm:P74_has_current_or_former_residence &lt;https://linked.art/example/place/172_1&gt; ;
+    crm:P95i_was_formed_by &lt;https://linked.art/example/event/139_1&gt; ;
+    crm:P99i_was_dissolved_by &lt;https://linked.art/example/event/153_1&gt; .
+
+&lt;http://vocab.getty.edu/aat/300418049&gt; a crm:E55_Type .
+
+&lt;http://vocab.getty.edu/page/aat/300404670&gt; a crm:E55_Type ;
+    rdfs:label &quot;preferred terms&quot; .
+
+&lt;https://linked.art/example/actor/142_1&gt; a crm:E39_Actor .
+
+&lt;https://linked.art/example/actor/167_1&gt; a crm:E74_Group .
+
+&lt;https://linked.art/example/actor/204_1&gt; a crm:E39_Actor .
+
+&lt;https://linked.art/example/actor/214_1&gt; a crm:E74_Group .
+
+&lt;https://linked.art/example/actor/218_1&gt; a crm:E39_Actor .
+
+&lt;https://linked.art/example/actor/228_1&gt; a crm:E74_Group .
+
+&lt;https://linked.art/example/actor/DHIF.145_1&gt; a crm:E39_Actor .
+
+&lt;https://linked.art/example/conceptual_object/138_1&gt; a crm:E33_Linguistic_Object .
+
+&lt;https://linked.art/example/conceptual_object/13_1&gt; a crm:E33_Linguistic_Object ;
+    crm:P190_has_symbolic_content &quot;Statement_string_content&quot; ;
+    crm:P2_has_type &lt;https://linked.art/example/type/14_1&gt; ;
+    crm:P67i_is_referred_to_by &lt;https://linked.art/example/statement/55_1&gt; ;
+    crm:P72_has_language &lt;https://linked.art/example/type/16_1&gt; .
+
+&lt;https://linked.art/example/conceptual_object/151_1&gt; a crm:E33_Linguistic_Object .
+
+&lt;https://linked.art/example/conceptual_object/165_1&gt; a crm:E33_Linguistic_Object .
+
+&lt;https://linked.art/example/conceptual_object/213_1&gt; a crm:E33_Linguistic_Object .
+
+&lt;https://linked.art/example/conceptual_object/227_1&gt; a crm:E33_Linguistic_Object .
+
+&lt;https://linked.art/example/conceptual_object/39_1&gt; a crm:E33_Linguistic_Object .
+
+&lt;https://linked.art/example/conceptual_object/426_1&gt; a crm:D1_Digital_Object ;
+    crm:P2_has_type &lt;https://linked.art/example/type/427_1&gt; .
+
+&lt;https://linked.art/example/conceptual_object/4_1&gt; a crm:E33_E41_Linguistic_Appellation ;
+    crm:P190_has_symbolic_content &quot;Name_string_value&quot; ;
+    crm:P2_has_type &lt;http://vocab.getty.edu/page/aat/300404670&gt; ;
+    crm:P67i_is_referred_to_by &lt;https://linked.art/example/textual_object/44_1&gt; ;
+    crm:P72_has_language &lt;https://linked.art/example/type/7_1&gt; .
+
+&lt;https://linked.art/example/conceptual_object/8_1&gt; a crm:E42_Identifier ;
+    crm:P190_has_symbolic_content &quot;Identifier_value_content&quot; ;
+    crm:P2_has_type &lt;https://linked.art/example/identifier/9_1&gt; .
+
+&lt;https://linked.art/example/conceptual_object/DHIF.143_1&gt; a crm:E33_Linguistic_Object .
+
+&lt;https://linked.art/example/conceptual_object/DHIF.144_1&gt; a crm:E33_Linguistic_Object .
+
+&lt;https://linked.art/example/conceptual_object/DHIF.146_1&gt; a crm:E33_Linguistic_Object .
+
+&lt;https://linked.art/example/conceptual_object/DHIF.147_1&gt; a crm:E33_Linguistic_Object .
+
+&lt;https://linked.art/example/conceptual_object/DHIF.148_1&gt; a crm:E33_Linguistic_Object .
+
+&lt;https://linked.art/example/event/126_1&gt; a crm:E7_Activity ;
+    crm:P16_used_specific_object &lt;https://linked.art/example/conceptual_object/DHIF.148_1&gt; ;
+    crm:P2_has_type &lt;https://linked.art/example/type/134_1&gt; ;
+    crm:P4_has_time-span &lt;https://linked.art/example/time_span/133_1&gt; ;
+    crm:P67i_is_referred_to_by &lt;https://linked.art/example/conceptual_object/138_1&gt; ;
+    crm:P7_took_place_at &lt;https://linked.art/example/place/126_2&gt; .
+
+&lt;https://linked.art/example/event/139_1&gt; a crm:E66_Formation ;
+    crm:P14_carried_out_by &lt;https://linked.art/example/actor/142_1&gt; ;
+    crm:P16_used_specific_object &lt;https://linked.art/example/conceptual_object/DHIF.143_1&gt; ;
+    crm:P2_has_type &lt;https://linked.art/example/type/147_1&gt; ;
+    crm:P4_has_time-span &lt;https://linked.art/example/time_span/146_1&gt; ;
+    crm:P67i_is_referred_to_by &lt;https://linked.art/example/conceptual_object/151_1&gt; ;
+    crm:P7_took_place_at &lt;https://linked.art/example/place/139_2&gt; .
+
+&lt;https://linked.art/example/event/153_1&gt; a crm:E68_Dissolution ;
+    crm:P14_carried_out_by &lt;https://linked.art/example/actor/DHIF.145_1&gt; ;
+    crm:P16_used_specific_object &lt;https://linked.art/example/conceptual_object/DHIF.144_1&gt; ;
+    crm:P2_has_type &lt;https://linked.art/example/type/161_1&gt; ;
+    crm:P4_has_time-span &lt;https://linked.art/example/time_span/160_1&gt; ;
+    crm:P67i_is_referred_to_by &lt;https://linked.art/example/conceptual_object/165_1&gt; ;
+    crm:P7_took_place_at &lt;https://linked.art/example/place/153_2&gt; .
+
+&lt;https://linked.art/example/event/201_1&gt; a crm:E85_Joining ;
+    crm:P144_joined_with &lt;https://linked.art/example/actor/214_1&gt; ;
+    crm:P14_carried_out_by &lt;https://linked.art/example/actor/204_1&gt; ;
+    crm:P16_used_specific_object &lt;https://linked.art/example/conceptual_object/DHIF.146_1&gt; ;
+    crm:P2_has_type &lt;https://linked.art/example/type/209_1&gt; ;
+    crm:P4_has_time-span &lt;https://linked.art/example/time_span/208_1&gt; ;
+    crm:P67i_is_referred_to_by &lt;https://linked.art/example/conceptual_object/213_1&gt; ;
+    crm:P7_took_place_at &lt;https://linked.art/example/place/201_2&gt; .
+
+&lt;https://linked.art/example/event/215_1&gt; a crm:E86_Leaving ;
+    crm:P146_separated_from &lt;https://linked.art/example/actor/228_1&gt; ;
+    crm:P14_carried_out_by &lt;https://linked.art/example/actor/218_1&gt; ;
+    crm:P16_used_specific_object &lt;https://linked.art/example/conceptual_object/DHIF.147_1&gt; ;
+    crm:P2_has_type &lt;https://linked.art/example/type/223_1&gt; ;
+    crm:P4_has_time-span &lt;https://linked.art/example/time_span/222_1&gt; ;
+    crm:P67i_is_referred_to_by &lt;https://linked.art/example/conceptual_object/227_1&gt; ;
+    crm:P7_took_place_at &lt;https://linked.art/example/place/215_2&gt; .
+
+&lt;https://linked.art/example/identifier/9_1&gt; a crm:E55_Type .
+
+&lt;https://linked.art/example/place/126_2&gt; a crm:E53_Place .
+
+&lt;https://linked.art/example/place/139_2&gt; a crm:E53_Place .
+
+&lt;https://linked.art/example/place/153_2&gt; a crm:E53_Place .
+
+&lt;https://linked.art/example/place/172_1&gt; a crm:E53_Place .
+
+&lt;https://linked.art/example/place/201_2&gt; a crm:E53_Place .
+
+&lt;https://linked.art/example/place/215_2&gt; a crm:E53_Place .
+
+&lt;https://linked.art/example/statement/55_1&gt; a crm:E33_Linguistic_Object .
+
+&lt;https://linked.art/example/textual_object/44_1&gt; a crm:E33_Linguistic_Object .
+
+&lt;https://linked.art/example/time_span/133_1&gt; a crm:E52_Time-Span .
+
+&lt;https://linked.art/example/time_span/146_1&gt; a crm:E52_Time-Span .
+
+&lt;https://linked.art/example/time_span/160_1&gt; a crm:E52_Time-Span .
+
+&lt;https://linked.art/example/time_span/208_1&gt; a crm:E52_Time-Span .
+
+&lt;https://linked.art/example/time_span/222_1&gt; a crm:E52_Time-Span .
+
+&lt;https://linked.art/example/type/11_1&gt; a crm:E55_Type ;
+    crm:P2_has_type &lt;https://linked.art/example/type/12_1&gt; .
+
+&lt;https://linked.art/example/type/12_1&gt; a crm:E55_Type .
+
+&lt;https://linked.art/example/type/134_1&gt; a crm:E55_Type .
+
+&lt;https://linked.art/example/type/147_1&gt; a crm:E55_Type .
+
+&lt;https://linked.art/example/type/14_1&gt; a crm:E55_Type ;
+    crm:P2_has_type &lt;http://vocab.getty.edu/aat/300418049&gt; .
+
+&lt;https://linked.art/example/type/161_1&gt; a crm:E55_Type .
+
+&lt;https://linked.art/example/type/16_1&gt; a crm:E56_Language .
+
+&lt;https://linked.art/example/type/209_1&gt; a crm:E55_Type .
+
+&lt;https://linked.art/example/type/223_1&gt; a crm:E55_Type .
+
+&lt;https://linked.art/example/type/427_1&gt; a crm:E55_Type .
+
+&lt;https://linked.art/example/type/7_1&gt; a crm:E56_Language .
+
+
+
+</code></pre>
+<h3 id="-group-json-ld">- Group <strong>JSON-LD</strong></h3>
+<pre><code>{
+  &quot;@context&quot;: &quot;https://linked.art/ns/v1/linked-art.json&quot;,
+  &quot;@graph&quot;: [
+    {
+      &quot;carried_out&quot;: [
+        &quot;https://linked.art/example/event/126_1&quot;
+      ],
+      &quot;classified_as&quot;: [
+        &quot;https://linked.art/example/type/11_1&quot;
+      ],
+      &quot;crm:P107i_is_current_or_former_member_of&quot;: {
+        &quot;id&quot;: &quot;https://linked.art/example/actor/167_1&quot;
+      },
+      &quot;dissolved_by&quot;: &quot;https://linked.art/example/event/153_1&quot;,
+      &quot;formed_by&quot;: &quot;https://linked.art/example/event/139_1&quot;,
+      &quot;id&quot;: &quot;https://linked.art/example/models/group&quot;,
+      &quot;identified_by&quot;: [
+        &quot;https://linked.art/example/conceptual_object/4_1&quot;,
+        &quot;https://linked.art/example/conceptual_object/8_1&quot;
+      ],
+      &quot;joined_by&quot;: [
+        &quot;https://linked.art/example/event/201_1&quot;
+      ],
+      &quot;left_by&quot;: [
+        &quot;https://linked.art/example/event/215_1&quot;
+      ],
+      &quot;referred_to_by&quot;: [
+        &quot;https://linked.art/example/conceptual_object/13_1&quot;,
+        &quot;https://linked.art/example/conceptual_object/426_1&quot;,
+        &quot;https://linked.art/example/conceptual_object/39_1&quot;
+      ],
+      &quot;residence&quot;: [
+        &quot;https://linked.art/example/place/172_1&quot;
+      ],
+      &quot;type&quot;: &quot;Group&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/actor/142_1&quot;,
+      &quot;type&quot;: &quot;Actor&quot;
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;https://linked.art/example/type/134_1&quot;
+      ],
+      &quot;id&quot;: &quot;https://linked.art/example/event/126_1&quot;,
+      &quot;referred_to_by&quot;: [
+        &quot;https://linked.art/example/conceptual_object/138_1&quot;
+      ],
+      &quot;timespan&quot;: &quot;https://linked.art/example/time_span/133_1&quot;,
+      &quot;took_place_at&quot;: [
+        &quot;https://linked.art/example/place/126_2&quot;
+      ],
+      &quot;type&quot;: &quot;Activity&quot;,
+      &quot;used_specific_object&quot;: [
+        &quot;https://linked.art/example/conceptual_object/DHIF.148_1&quot;
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/actor/228_1&quot;,
+      &quot;type&quot;: &quot;Group&quot;
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;http://vocab.getty.edu/page/aat/300404670&quot;
+      ],
+      &quot;content&quot;: &quot;Name_string_value&quot;,
+      &quot;id&quot;: &quot;https://linked.art/example/conceptual_object/4_1&quot;,
+      &quot;language&quot;: [
+        &quot;https://linked.art/example/type/7_1&quot;
+      ],
+      &quot;referred_to_by&quot;: [
+        &quot;https://linked.art/example/textual_object/44_1&quot;
+      ],
+      &quot;type&quot;: &quot;Name&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/conceptual_object/DHIF.148_1&quot;,
+      &quot;type&quot;: &quot;LinguisticObject&quot;
+    },
+    {
+      &quot;carried_out_by&quot;: [
+        &quot;https://linked.art/example/actor/DHIF.145_1&quot;
+      ],
+      &quot;classified_as&quot;: [
+        &quot;https://linked.art/example/type/161_1&quot;
+      ],
+      &quot;id&quot;: &quot;https://linked.art/example/event/153_1&quot;,
+      &quot;referred_to_by&quot;: [
+        &quot;https://linked.art/example/conceptual_object/165_1&quot;
+      ],
+      &quot;timespan&quot;: &quot;https://linked.art/example/time_span/160_1&quot;,
+      &quot;took_place_at&quot;: [
+        &quot;https://linked.art/example/place/153_2&quot;
+      ],
+      &quot;type&quot;: &quot;Dissolution&quot;,
+      &quot;used_specific_object&quot;: [
+        &quot;https://linked.art/example/conceptual_object/DHIF.144_1&quot;
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/place/153_2&quot;,
+      &quot;type&quot;: &quot;Place&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/type/134_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/place/139_2&quot;,
+      &quot;type&quot;: &quot;Place&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/place/126_2&quot;,
+      &quot;type&quot;: &quot;Place&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/type/7_1&quot;,
+      &quot;type&quot;: &quot;Language&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/type/12_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/place/172_1&quot;,
+      &quot;type&quot;: &quot;Place&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/time_span/222_1&quot;,
+      &quot;type&quot;: &quot;TimeSpan&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/conceptual_object/DHIF.146_1&quot;,
+      &quot;type&quot;: &quot;LinguisticObject&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/conceptual_object/227_1&quot;,
+      &quot;type&quot;: &quot;LinguisticObject&quot;
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;https://linked.art/example/type/14_1&quot;
+      ],
+      &quot;content&quot;: &quot;Statement_string_content&quot;,
+      &quot;id&quot;: &quot;https://linked.art/example/conceptual_object/13_1&quot;,
+      &quot;language&quot;: [
+        &quot;https://linked.art/example/type/16_1&quot;
+      ],
+      &quot;referred_to_by&quot;: [
+        &quot;https://linked.art/example/statement/55_1&quot;
+      ],
+      &quot;type&quot;: &quot;LinguisticObject&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/actor/204_1&quot;,
+      &quot;type&quot;: &quot;Actor&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/actor/218_1&quot;,
+      &quot;type&quot;: &quot;Actor&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/actor/214_1&quot;,
+      &quot;type&quot;: &quot;Group&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/textual_object/44_1&quot;,
+      &quot;type&quot;: &quot;LinguisticObject&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/type/209_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/time_span/208_1&quot;,
+      &quot;type&quot;: &quot;TimeSpan&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/type/223_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/conceptual_object/151_1&quot;,
+      &quot;type&quot;: &quot;LinguisticObject&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/identifier/9_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/time_span/160_1&quot;,
+      &quot;type&quot;: &quot;TimeSpan&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/statement/55_1&quot;,
+      &quot;type&quot;: &quot;LinguisticObject&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/conceptual_object/213_1&quot;,
+      &quot;type&quot;: &quot;LinguisticObject&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/time_span/133_1&quot;,
+      &quot;type&quot;: &quot;TimeSpan&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/type/16_1&quot;,
+      &quot;type&quot;: &quot;Language&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/conceptual_object/DHIF.147_1&quot;,
+      &quot;type&quot;: &quot;LinguisticObject&quot;
+    },
+    {
+      &quot;carried_out_by&quot;: [
+        &quot;https://linked.art/example/actor/218_1&quot;
+      ],
+      &quot;classified_as&quot;: [
+        &quot;https://linked.art/example/type/223_1&quot;
+      ],
+      &quot;id&quot;: &quot;https://linked.art/example/event/215_1&quot;,
+      &quot;referred_to_by&quot;: [
+        &quot;https://linked.art/example/conceptual_object/227_1&quot;
+      ],
+      &quot;separated_from&quot;: &quot;https://linked.art/example/actor/228_1&quot;,
+      &quot;timespan&quot;: &quot;https://linked.art/example/time_span/222_1&quot;,
+      &quot;took_place_at&quot;: [
+        &quot;https://linked.art/example/place/215_2&quot;
+      ],
+      &quot;type&quot;: &quot;Leaving&quot;,
+      &quot;used_specific_object&quot;: [
+        &quot;https://linked.art/example/conceptual_object/DHIF.147_1&quot;
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/type/161_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;https://linked.art/example/type/427_1&quot;
+      ],
+      &quot;id&quot;: &quot;https://linked.art/example/conceptual_object/426_1&quot;,
+      &quot;type&quot;: &quot;crm:D1_Digital_Object&quot;
+    },
+    {
+      &quot;_label&quot;: &quot;preferred terms&quot;,
+      &quot;id&quot;: &quot;http://vocab.getty.edu/page/aat/300404670&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;carried_out_by&quot;: [
+        &quot;https://linked.art/example/actor/204_1&quot;
+      ],
+      &quot;classified_as&quot;: [
+        &quot;https://linked.art/example/type/209_1&quot;
+      ],
+      &quot;id&quot;: &quot;https://linked.art/example/event/201_1&quot;,
+      &quot;joined_with&quot;: &quot;https://linked.art/example/actor/214_1&quot;,
+      &quot;referred_to_by&quot;: [
+        &quot;https://linked.art/example/conceptual_object/213_1&quot;
+      ],
+      &quot;timespan&quot;: &quot;https://linked.art/example/time_span/208_1&quot;,
+      &quot;took_place_at&quot;: [
+        &quot;https://linked.art/example/place/201_2&quot;
+      ],
+      &quot;type&quot;: &quot;Joining&quot;,
+      &quot;used_specific_object&quot;: [
+        &quot;https://linked.art/example/conceptual_object/DHIF.146_1&quot;
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/conceptual_object/39_1&quot;,
+      &quot;type&quot;: &quot;LinguisticObject&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/time_span/146_1&quot;,
+      &quot;type&quot;: &quot;TimeSpan&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/conceptual_object/DHIF.143_1&quot;,
+      &quot;type&quot;: &quot;LinguisticObject&quot;
+    },
+    {
+      &quot;id&quot;: &quot;http://vocab.getty.edu/aat/300418049&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;https://linked.art/example/type/12_1&quot;
+      ],
+      &quot;id&quot;: &quot;https://linked.art/example/type/11_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/place/215_2&quot;,
+      &quot;type&quot;: &quot;Place&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/type/147_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/conceptual_object/165_1&quot;,
+      &quot;type&quot;: &quot;LinguisticObject&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/actor/167_1&quot;,
+      &quot;type&quot;: &quot;Group&quot;
+    },
+    {
+      &quot;carried_out_by&quot;: [
+        &quot;https://linked.art/example/actor/142_1&quot;
+      ],
+      &quot;classified_as&quot;: [
+        &quot;https://linked.art/example/type/147_1&quot;
+      ],
+      &quot;id&quot;: &quot;https://linked.art/example/event/139_1&quot;,
+      &quot;referred_to_by&quot;: [
+        &quot;https://linked.art/example/conceptual_object/151_1&quot;
+      ],
+      &quot;timespan&quot;: &quot;https://linked.art/example/time_span/146_1&quot;,
+      &quot;took_place_at&quot;: [
+        &quot;https://linked.art/example/place/139_2&quot;
+      ],
+      &quot;type&quot;: &quot;Formation&quot;,
+      &quot;used_specific_object&quot;: [
+        &quot;https://linked.art/example/conceptual_object/DHIF.143_1&quot;
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/conceptual_object/138_1&quot;,
+      &quot;type&quot;: &quot;LinguisticObject&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/place/201_2&quot;,
+      &quot;type&quot;: &quot;Place&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/actor/DHIF.145_1&quot;,
+      &quot;type&quot;: &quot;Actor&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/conceptual_object/DHIF.144_1&quot;,
+      &quot;type&quot;: &quot;LinguisticObject&quot;
+    },
+    {
+      &quot;id&quot;: &quot;https://linked.art/example/type/427_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;https://linked.art/example/identifier/9_1&quot;
+      ],
+      &quot;content&quot;: &quot;Identifier_value_content&quot;,
+      &quot;id&quot;: &quot;https://linked.art/example/conceptual_object/8_1&quot;,
+      &quot;type&quot;: &quot;Identifier&quot;
+    },
+    {
+      &quot;classified_as&quot;: [
+        &quot;http://vocab.getty.edu/aat/300418049&quot;
+      ],
+      &quot;id&quot;: &quot;https://linked.art/example/type/14_1&quot;,
+      &quot;type&quot;: &quot;Type&quot;
+    }
+  ]
+}
+
+
+</code></pre>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../place/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../place/" class="btn btn-xs btn-link">
+        Place
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../person/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../person/" class="btn btn-xs btn-link">
+        Person
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>
